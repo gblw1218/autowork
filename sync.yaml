@@ -1,0 +1,27 @@
+name: Sync Fork
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 每天午夜运行一次
+  workflow_dispatch:  # 可手动触发
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          repository: gblw1218/ios_rule_script
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: fork-repo
+      - name: Add Upstream Repository
+        run: git remote add upstream https://github.com/blackmatrix7/ios_rule_script.git  # 替换为上游仓库路径
+        working-directory: fork-repo
+      - name: Fetch Upstream Changes
+        run: git fetch upstream
+        working-directory: fork-repo
+      - name: Merge Upstream Changes
+        run: git merge upstream/main --no-edit  # 替换 main 为上游分支名称
+        working-directory: fork-repo
+      - name: Push Changes
+        run: git push origin main  # 替换 main 为你的 Fork 分支名称
+        working-directory: fork-repo
