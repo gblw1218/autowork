@@ -5,9 +5,8 @@ const outputLanguage = "CN"; // 选择 "CN" 或 "EN"
 const keywordsToNames = {
     "美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago": outputLanguage === "EN" ? "🇺🇸US" : "🇺🇸美国🔥",
     "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal": outputLanguage === "EN" ? "🇨🇦CA" : "🇨🇦加拿大🔥",
-    "港|香港|HK|Hong Kong": outputLanguage === "EN" ? "🇭🇰HK" : "🇭🇰香港🔥",
     "新加坡|狮城|SG|Singapore": outputLanguage === "EN" ? "🇸🇬SG" : "🇸🇬新加坡🔥",
-    "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung": outputLanguage === "EN" ? "twTW" : "TW台湾🔥",
+    "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao": outputLanguage === "EN" ? "twHMT" : "🇭🇰港澳台🔥",
     "日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya": outputLanguage === "EN" ? "🇯🇵JP" : "🇯🇵日本🔥",
     "韩国|首尔|釜山|KR|Korea|Seoul|Busan": outputLanguage === "EN" ? "🇰🇷KR" : "🇰🇷韩国🔥",
     "澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": outputLanguage === "EN" ? "🇦🇺AU" : "🇦🇺澳大利亚🔥",
@@ -84,6 +83,7 @@ const filterKeywords = [
 const keywordsMap = {
     "ChatGPT": "GPT",
      "解锁": "解",
+    "中转": "中转",
 };
 
 // 检查是否包含过滤关键词
