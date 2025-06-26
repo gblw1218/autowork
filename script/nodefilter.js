@@ -7,7 +7,7 @@ const keywordsToNames = {
     "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal": outputLanguage === "EN" ? "🇨🇦CA" : "🇨🇦加拿大🔥",
     "港|香港|HK|Hong Kong": outputLanguage === "EN" ? "🇭🇰HK" : "🇭🇰香港🔥",
     "新加坡|狮城|SG|Singapore": outputLanguage === "EN" ? "🇸🇬SG" : "🇸🇬新加坡🔥",
-    "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung": outputLanguage === "EN" ? "twTW" : "tw台湾🔥",
+    "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung": outputLanguage === "EN" ? "twTW" : "TW台湾🔥",
     "日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya": outputLanguage === "EN" ? "🇯🇵JP" : "🇯🇵日本🔥",
     "韩国|首尔|釜山|KR|Korea|Seoul|Busan": outputLanguage === "EN" ? "🇰🇷KR" : "🇰🇷韩国🔥",
     "澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": outputLanguage === "EN" ? "🇦🇺AU" : "🇦🇺澳大利亚🔥",
@@ -112,12 +112,8 @@ for (const keyword in keywordsToNames) {
 
 
 // 添加自定义前缀字符
-if (!titleFlag) {
-    newTitle = customCharStart + "不建议节点";
-}else{
-    newTitle = customCharStart + newTitle;
-}
-
+if (!titleFlag) return false;
+ newTitle = customCharStart + newTitle;
 const map = globalThis.map || (globalThis.map = {});
 
 // 防止节点标题重复
