@@ -1,24 +1,23 @@
-let customCharStart = "➥"; //添加前缀，删除引号内的内容即不添加前缀
+let customCharStart = "王大大-"; //添加前缀，删除引号内的内容即不添加前缀
 let customCharEnd = ""; //添加后缀，删除引号中的内容即不添加后缀
 const outputLanguage = "CN"; // 选择 "CN" 或 "EN"
 
-// 国家和地区与标识符的映射（包括中文和英文名）
 const keywordsToNames = {
-    "美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago": outputLanguage === "EN" ? "🇺🇸US" : "🇺🇸美国",
-    "港|香港|HK|Hong Kong": outputLanguage === "EN" ? "🇭🇰HK" : "🇭🇰香港",
-    "新加坡|狮城|SG|Singapore": outputLanguage === "EN" ? "🇸🇬SG" : "🇸🇬新加坡",
-    "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung": outputLanguage === "EN" ? "🇨🇳TW" : "🇨🇳台湾",
-    "日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya": outputLanguage === "EN" ? "🇯🇵JP" : "🇯🇵日本",
-    "韩国|首尔|釜山|KR|Korea|Seoul|Busan": outputLanguage === "EN" ? "🇰🇷KR" : "🇰🇷韩国",
+    "美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago": outputLanguage === "EN" ? "🇺🇸US" : "🇺🇸美国🔥",
+    "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal": outputLanguage === "EN" ? "🇨🇦CA" : "🇨🇦加拿大🔥",
+    "港|香港|HK|Hong Kong": outputLanguage === "EN" ? "🇭🇰HK" : "🇭🇰香港🔥",
+    "新加坡|狮城|SG|Singapore": outputLanguage === "EN" ? "🇸🇬SG" : "🇸🇬新加坡🔥",
+    "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung": outputLanguage === "EN" ? "twTW" : "tw台湾🔥",
+    "日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya": outputLanguage === "EN" ? "🇯🇵JP" : "🇯🇵日本🔥",
+    "韩国|首尔|釜山|KR|Korea|Seoul|Busan": outputLanguage === "EN" ? "🇰🇷KR" : "🇰🇷韩国🔥",
+    "澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": outputLanguage === "EN" ? "🇦🇺AU" : "🇦🇺澳大利亚🔥",
     "土耳其|伊斯坦布尔|安卡拉|TR|Turkey|Istanbul|Ankara": outputLanguage === "EN" ? "🇹🇷TR" : "🇹🇷土耳其",
     "爱尔兰|都柏林|IE|Ireland|Dublin": outputLanguage === "EN" ? "🇮🇪IRL" : "🇮🇪爱尔兰",
-    "澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": outputLanguage === "EN" ? "🇦🇺AU" : "🇦🇺澳大利亚",
     "法国|巴黎|里昂|马赛|FR|France|Paris|Lyon|Marseille": outputLanguage === "EN" ? "🇫🇷FRA" : "🇫🇷法国",
     "瑞典|斯德哥尔摩|哥德堡|SE|Sweden|Stockholm|Gothenburg": outputLanguage === "EN" ? "🇸🇪SE" : "🇸🇪瑞典",
     "德国|法兰克福|柏林|慕尼黑|DE|Germany|Frankfurt|Berlin|Munich": outputLanguage === "EN" ? "🇩🇪DE" : "🇩🇪德国",
     "英国|伦敦|曼彻斯特|伯明翰|GB|UK|United Kingdom|London|Manchester|Birmingham": outputLanguage === "EN" ? "🇬🇧GB" : "🇬🇧英国",
     "印度|孟买|德里|班加罗尔|IN|India|Mumbai|Delhi|Bangalore": outputLanguage === "EN" ? "🇮🇳IN" : "🇮🇳印度",
-    "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal": outputLanguage === "EN" ? "🇨🇦CA" : "🇨🇦加拿大",
     "西班牙|马德里|巴塞罗那|ES|Spain|Madrid|Barcelona": outputLanguage === "EN" ? "🇪🇸ES" : "🇪🇸西班牙",
     "意大利|罗马|米兰|那不勒斯|IT|Italy|Rome|Milan|Naples": outputLanguage === "EN" ? "🇮🇹IT" : "🇮🇹意大利",
     "荷兰|阿姆斯特丹|鹿特丹|NL|Netherlands|Amsterdam|Rotterdam": outputLanguage === "EN" ? "🇳🇱NL" : "🇳🇱荷兰",
@@ -72,7 +71,7 @@ const keywordsToNames = {
 // 过滤关键词，防止无效或广告节点
 const filterKeywords = [
     "广告", "过期", "无效", "测试", "备用", "官网", "账号", "有效期", "群", 
-    "到期", "刷新", "剩余", "会员", "解锁", "流量", "超时", 
+    "到期", "刷新", "剩余", "会员", "流量", "超时", 
     "订阅", "佣金", "免翻", "节点", "下载", "更新", "点外", "重置", 
     "免流", "Days", "Date", "Expire", "Premium", "建议",
     "套餐", "到期", "有效", "剩余", "版本", "已用", "过期", "失联", 
@@ -83,7 +82,8 @@ const filterKeywords = [
 
 // 定义保留的关键词及其替换词
 const keywordsMap = {
-    "ChatGPT": "GPT"
+    "ChatGPT": "GPT",
+     "解锁": "解",
 };
 
 // 检查是否包含过滤关键词
@@ -100,17 +100,23 @@ for (const kw in keywordsMap) {
         newTitle = newTitle.replace(match[0], ''); // 去除已匹配的关键词部分
     }
 }
-
+let titleFlag = false;
 // 匹配地区关键词，并用标识符替换节点名称
 for (const keyword in keywordsToNames) {
     if (new RegExp(keyword, 'i').test(newTitle)) {
         newTitle = keywordsToNames[keyword]; // 使用对应的名称
+        titleFlag = true;
         break;
     }
 }
 
+
 // 添加自定义前缀字符
-newTitle = customCharStart + newTitle;
+if (!titleFlag) {
+    newTitle = customCharStart + "不建议节点";
+}else{
+    newTitle = customCharStart + newTitle;
+}
 
 const map = globalThis.map || (globalThis.map = {});
 
