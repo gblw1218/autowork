@@ -1,7 +1,9 @@
-local customCharStart = "王大大-" -- Prefix (remove content in quotes to disable)
-local customCharEnd = "" -- Suffix (remove content in quotes to disable)
-local outputLanguage = "CN" -- "CN" for Chinese, "EN" for English
+-- 配置
+local customCharStart = "王大大-" -- 前缀（清空引号内容以禁用）
+local customCharEnd = "" -- 后缀（清空引号内容以禁用）
+local outputLanguage = "CN" -- 选择语言："CN" 为中文，"EN" 为英文
 
+-- 国家和地区映射
 local keywordsToNames = {
     ["新加坡|狮城|SG|Singapore"] = outputLanguage == "EN" and "🇸🇬SG" or "🇸🇬新加坡🔥",
     ["台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao"] = outputLanguage == "EN" and "twHMT" or "🇭🇰港澳台🔥",
@@ -58,7 +60,7 @@ local keywordsToNames = {
     ["塞尔维亚|Serbia|RS|Belgrade|Novi Sad|Niš"] = outputLanguage == "EN" and "🇷🇸RS" or "🇷🇸塞尔维亚",
     ["立陶宛|Lithuania|LT|Vilnius|Kaunas|Klaipėda"] = outputLanguage == "EN" and "🇱🇹LT" or "🇱🇹立陶宛",
     ["危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango"] = outputLanguage == "EN" and "🇬🇹GT" or "🇬🇹危地马拉",
-    ["丹麦|Denmark|DK|Copenhagen|Aarhus|Odense"] = outputLanguage == "EN" and "🇩🇰DK" or "� dk丹麦",
+    ["丹麦|Denmark|DK|Copenhagen|Aarhus|Odense"] = outputLanguage == "EN" and "🇩🇰DK" or "🇩🇰丹麦",
     ["乌克兰|Ukraine|UA|Kyiv|Lviv|Odesa"] = outputLanguage == "EN" and "🇺🇦UA" or "🇺🇦乌克兰",
     ["厄瓜多尔|Ecuador|EC|Quito|Guayaquil|Cuenca"] = outputLanguage == "EN" and "🇪🇨EC" or "🇪🇨厄瓜多尔",
     ["哥斯达黎加|Costa Rica|CR|San José|Alajuela|Cartago"] = outputLanguage == "EN" and "🇨🇷CR" or "🇨🇷哥斯达黎加",
@@ -67,7 +69,7 @@ local keywordsToNames = {
     ["玻利维亚|Bolivia|BO|Sucre|La Paz|Santa Cruz"] = outputLanguage == "EN" and "🇧🇴BO" or "🇧🇴玻利维亚"
 }
 
--- Filter keywords to exclude invalid or promotional nodes
+-- 过滤关键词，排除无效或广告节点
 local filterKeywords = {
     "广告", "过期", "无效", "测试", "备用", "官网", "账号", "有效期", 
     "到期", "刷新", "剩余", "会员", "流量", "超时", "佣金", "免翻", 
@@ -78,6 +80,7 @@ local filterKeywords = {
     "USE", "USED", "TOTAL", "EXPIRE", "EMAIL"
 }
 
+-- 保留关键词及其替换词
 local keywordsMap = {
     ["ChatGPT"] = "GPT",
     ["解锁"] = "解",
@@ -85,12 +88,14 @@ local keywordsMap = {
     ["t.me"] = ""
 }
 
+-- 检查是否包含过滤关键词
 for _, kw in ipairs(filterKeywords) do
     if string.find(string.lower($server.title), string.lower(kw)) then
         return false
     end
 end
 
+-- 提取并替换保留关键词
 local preservedParts = {}
 local newTitle = $server.title
 
@@ -101,6 +106,7 @@ for kw, replacement in pairs(keywordsMap) do
     end
 end
 
+-- 匹配地区关键词并替换标题
 local titleFlag = false
 for keyword, name in pairs(keywordsToNames) do
     if string.find(string.lower(newTitle), string.lower(keyword)) then
@@ -110,12 +116,15 @@ for keyword, name in pairs(keywordsToNames) do
     end
 end
 
+-- 如果没有匹配到地区关键词，返回 false
 if not titleFlag then
     return false
 end
 
+-- 添加自定义前缀
 newTitle = customCharStart .. newTitle
 
+-- 处理标题重复
 local map = globalThis.map or {}
 globalThis.map = map
 if not map[newTitle] then
@@ -125,12 +134,15 @@ else
     map[newTitle] = (map[newTitle] or 0) + 1
 end
 
+-- 添加自定义后缀
 newTitle = newTitle .. customCharEnd
 
+-- 追加保留的部分
 if #preservedParts > 0 then
     newTitle = newTitle .. " " .. table.concat(preservedParts, " ")
 end
 
+-- 更新服务器标题
 $server.title = newTitle
 
 return true
