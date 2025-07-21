@@ -195,10 +195,18 @@ function processNodeTitle($server) {
 }
 
 // --- Shadowrocket 脚本入口点 ---
-// 在 Shadowrocket 中，`main` 函数是脚本的入口。
-// 对于“过滤器”或“重写”类型的脚本，Shadowrocket 通常会把每一个节点作为 `$server` 对象（在这里表示为 `nodes` 参数）单独传递给 `main` 函数。
-// 因此，`main` 函数直接调用 `processNodeTitle` 来处理单个节点。
+// 这是为假设 Shadowrocket 的 `main` 函数接收一个完整节点数组的场景设计的。
+// 如果您的 Shadowrocket 配置是逐个处理节点（更常见），则应只使用 processNodeTitle 函数。
 function main(nodes) {
-    // 假设 `nodes` 参数实际上就是 Shadowrocket 传递的单个 `$server` 对象。
-    return processNodeTitle(nodes);
+    // 1. 先过滤掉重复的节点
+    const uniqueNodes = filterNodes(nodes);
+
+    // 2. 然后对每个独特的节点进行标题处理和过滤
+    const finalNodes = [];
+    for (const node of uniqueNodes) {
+        if (processNodeTitle(node)) { // 调用标题处理函数
+            finalNodes.push(node);
+        }
+    }
+    return finalNodes;
 }
