@@ -1,12 +1,10 @@
-```lua
 local http = require("http")
 local json = require("json")
 
 -- 配置参数
 local test_url = "http://www.gstatic.com/generate_204"
-local proxy_group = "AutoSwitch" -- 代理组名称
+local proxy_group = "autoSwitch" -- 代理组名称，与 [Proxy Group] 一致
 local latency_threshold = 2000   -- 最大可接受延迟（毫秒）
-local test_interval = 300        -- 测试间隔（秒，例如 300 秒 = 5 分钟）
 local timeout = 5               -- HTTP 请求超时时间（秒）
 
 -- 测试单个节点的函数
@@ -66,9 +64,9 @@ function main()
         local is_valid, latency = testNode(node)
         if is_valid then
             table.insert(valid_nodes, node)
-            print("节点 " .. node .. " 可用，延迟 " .. latency .. " 毫秒")
+            print("节点 " .. tostring(node) .. " 可用，延迟 " .. tostring(latency) .. " 毫秒")
         else
-            print("节点 " .. node .. " 不可用或延迟过高")
+            print("节点 " .. tostring(node) .. " 不可用或延迟过高")
         end
     end
     
@@ -80,5 +78,5 @@ function main()
     end
 end
 
--- 定时调度脚本
-shadowrocket.schedule(main, test_interval)
+-- 定时任务入口
+main()
