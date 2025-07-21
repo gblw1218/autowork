@@ -2,6 +2,7 @@ async function main(config) {
     // 检查配置和节点列表
     if (!config || !config.server) {
         console.log('错误：无效配置或无节点列表');
+		console.log(config);
         return config; // 返回原始配置以防出错
     }
 
