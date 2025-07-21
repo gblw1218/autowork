@@ -1,61 +1,39 @@
 // Shadowrocket 脚本：过滤超时或不可用节点
 // 适用于 Shadowrocket 的 [Script] 部分
+// 类型：Filter 或 Rewrite
 
-function main(params) {
-    // 获取传入的节点列表
-    var proxies = params.proxies || [];
-    var timeoutThreshold = 1000; // 延迟阈值，单位毫秒
 
-    // 返回一个 Promise，异步处理节点测试
-    return new Promise((resolve, reject) => {
-        // 用于存储可用节点
-        var availableProxies = [];
-        
-        // 遍历所有节点
-        Promise.all(proxies.map(proxy => {
-            // 测试节点延迟
-            return testProxyDelay(proxy)
-                .then(delay => {
-                    // 如果延迟小于阈值，保留该节点
-                    if (delay >= 0 && delay <= timeoutThreshold) {
-                        availableProxies.push(proxy);
-                    }
-                })
-                .catch(() => {
-                    // 如果测试失败（超时或不可用），忽略该节点
-                });
-        }))
-        .then(() => {
-            // 返回过滤后的节点列表
-            resolve({
-                proxies: availableProxies
+function main(proxy) {
+    // 定义延迟阈值，单位毫秒 (例如，1000ms = 1秒)
+    var timeoutThreshold = 1000; 
+
+    // 使用 Promise 异步测试节点延迟
+    return new Promise(resolve => {
+        // 确保 proxy 对象存在且有 test 方法 (或 delay 方法)
+        if (!proxy || typeof proxy.test !== 'function') {
+            // 如果 proxy 不符合预期，直接丢弃
+            console.log('无效的代理对象或不支持测试方法:', proxy); // 可以在控制台输出调试信息
+            resolve(false); 
+            return;
+        }
+
+        // 调用 Shadowrocket 代理对象的内置 test 方法来获取延迟
+        // test() 方法通常返回 Promise，解析后得到延迟值 (毫秒)
+        proxy.test()
+            .then(delay => {
+                // 如果延迟有效且在阈值内，则保留该节点
+                if (delay >= 0 && delay <= timeoutThreshold) {
+                    resolve(true); // 保留节点
+                } else {
+                    // 延迟过高或无效，丢弃节点
+                    console.log(`节点 ${proxy.name} 延迟 ${delay}ms，超过阈值 ${timeoutThreshold}ms，丢弃。`);
+                    resolve(false); // 丢弃节点
+                }
+            })
+            .catch(error => {
+                // 测试失败（例如超时或节点不可达），丢弃该节点
+                console.log(`节点 ${proxy.name} 测试失败: ${error}，丢弃。`);
+                resolve(false); // 丢弃节点
             });
-        })
-        .catch(err => {
-            reject(err);
-        });
     });
 }
-
-// 测试单个节点延迟的函数
-function testProxyDelay(proxy) {
-    return new Promise((resolve, reject) => {
-        // 使用 Shadowrocket 内置的 $httpClient 进行延迟测试
-        $httpClient.get({
-            url: 'https://www.google.com', // 测试目标 URL
-            timeout: 5, // 超时时间 5 秒
-            proxy: proxy // 使用当前节点进行测试
-        }, (error, response) => {
-            if (error) {
-                // 如果请求失败，节点不可用
-                reject(error);
-            } else {
-                // 返回延迟（假设 response 包含 delay 字段，单位毫秒）
-                resolve(response.delay || 0);
-            }
-        });
-    });
-}
-
-// 脚本入口
-main($script.params);
