@@ -70,13 +70,13 @@ const keywordsToNames = {
 
 // 过滤关键词，防止无效或广告节点
 const filterKeywords = [
-    "广告", "过期", "无效", "测试", "备用", "官网", "账号", "有效期", 
+    "广告", "过期", "无效", "测试", "备用", "账号", "有效期", 
     "到期", "刷新", "剩余", "会员", "流量", "超时", 
     "佣金", "免翻",  "下载", "更新", "点外", "重置", 
     "Days", "Date", "Expire", "Premium", "建议",
     "套餐", "到期", "有效", "剩余", "版本", "已用", "过期", "失联", 
-    "测试", "官方", "网址", "备用", "TEST", "客服", "网站", 
-    "获取", "流量", "机场", "下次", "官址", "联系", "邮箱", 
+    "测试", "备用", "TEST", "客服", "网站", 
+    "获取", "流量", "下次", "官址", "联系", "邮箱", 
     "工单", "学术", "USE", "USED", "TOTAL", "EXPIRE", "EMAIL"
 ];
 
@@ -90,48 +90,34 @@ const keywordsMap = {
 
 // 检查是否包含过滤关键词
 if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return false;
-
 // 保留跳过的关键词部分
 let preservedParts = [], newTitle = $server.title;
-
 // 提取并移除跳过的关键词部分
 for (const kw in keywordsMap) {
     let match = newTitle.match(new RegExp(kw, 'i'));
     if (match) {
-        preservedParts.push(keywordsMap[kw]); // 使用替换词
-        newTitle = newTitle.replace(match[0], ''); // 去除已匹配的关键词部分
+        preservedParts.push(keywordsMap[kw]);
+        newTitle = newTitle.replace(match[0], '');
     }
 }
 let titleFlag = false;
-// 匹配地区关键词，并用标识符替换节点名称
 for (const keyword in keywordsToNames) {
     if (new RegExp(keyword, 'i').test(newTitle)) {
-        newTitle = keywordsToNames[keyword]; // 使用对应的名称
+        newTitle = keywordsToNames[keyword];
         titleFlag = true;
         break;
     }
 }
-
-
-// 添加自定义前缀字符
 if (!titleFlag) return false;
  newTitle = customCharStart + newTitle;
 const map = globalThis.map || (globalThis.map = {});
 
-// 防止节点标题重复
 if (!map[newTitle]) {
     map[newTitle] = 1;
 } else {
     newTitle = `${newTitle}-${++map[newTitle]}`;
 }
-
-// 添加自定义后缀字符
 newTitle += customCharEnd;
-
-// 将保留的部分重新加到标题上
 if (preservedParts.length) newTitle += ' ' + preservedParts.join(' ');
-
-// 更新服务器标题
 $server.title = newTitle;
-
 return true;
