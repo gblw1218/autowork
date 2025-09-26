@@ -86,6 +86,7 @@ const keywordsMap = {
      "解锁": "解",
     "中转": "中转",
 	"t.me": "",
+	"ccbaohe.com":"666"
 };
 
 // 检查是否包含过滤关键词
@@ -103,7 +104,7 @@ for (const kw in keywordsMap) {
 let titleFlag = false;
 for (const keyword in keywordsToNames) {
     if (new RegExp(keyword, 'i').test(newTitle)) {
-        newTitle = keywordsToNames[keyword];
+        newTitle =  keywordsToNames[keyword];
         titleFlag = true;
         break;
     }
