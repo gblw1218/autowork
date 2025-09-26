@@ -86,7 +86,7 @@ const keywordsMap = {
      "解锁": "解",
     "中转": "中转",
 	"t.me": "",
-	"ccbaohe.com":"666"
+	"ccbaohe.com":"老王"
 };
 
 // 检查是否包含过滤关键词
