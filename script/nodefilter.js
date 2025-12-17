@@ -1,6 +1,6 @@
-let customCharStart = "王大大-"; //添加前缀，删除引号内的内容即不添加前缀
-let customCharEnd = ""; //添加后缀，删除引号中的内容即不添加后缀
-const outputLanguage = "CN"; // 选择 "CN" 或 "EN"
+let customCharStart = "LW-"; 
+let customCharEnd = ""; 
+const outputLanguage = "CN"; 
 
 const keywordsToNames = {
     "新加坡|狮城|SG|Singapore": outputLanguage === "EN" ? "🇸🇬SG" : "🇸🇬新加坡🔥",
