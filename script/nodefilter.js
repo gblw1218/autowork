@@ -1,6 +1,6 @@
 let customCharStart = "LW-";
 let customCharEnd = "";
-let nodeCount = 0;
+let nodeCount = globalThis.nodeCount || (globalThis.nodeCount = 0);
 const outputLanguage = "CN";
 
 const filteredTypes = ["trojan", "udp"]; // 要过滤的协议类型
