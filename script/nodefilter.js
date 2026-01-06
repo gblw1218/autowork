@@ -140,6 +140,7 @@ const map = globalThis.map || (globalThis.map = {});
 
 if (!map[newTitle]) {
     map[newTitle] = 1;
+	newTitle = `${newTitle}-1`;
 } else {
     newTitle = `${newTitle}-${++map[newTitle]}`;
 }
