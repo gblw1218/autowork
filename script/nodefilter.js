@@ -2,6 +2,11 @@ let customCharStart = "LW-";
 let customCharEnd = ""; 
 const outputLanguage = "CN"; 
 
+const filteredTypes = ["trojan", "udp"]; // 要过滤的协议类型（不区分大小写）
+if (filteredTypes.includes($server.type?.toLowerCase())) {
+    return false; // 跳过这些类型的节点
+}
+
 const keywordsToNames = {
     "新加坡|狮城|SG|Singapore": outputLanguage === "EN" ? "🇸🇬SG" : "🇸🇬新加坡🔥",
     "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao": outputLanguage === "EN" ? "twHMT" : "🇭🇰港澳台🔥",
@@ -9,6 +14,9 @@ const keywordsToNames = {
     "韩国|首尔|釜山|KR|Korea|Seoul|Busan": outputLanguage === "EN" ? "🇰🇷KR" : "🇰🇷韩国🔥",
     "阿联酋|迪拜|阿布扎比|AE|UAE|Dubai|Abu Dhabi": outputLanguage === "EN" ? "🇦🇪AE" : "🇦🇪阿联酋🔥",
     "以色列|Israel|IL|Jerusalem|Tel Aviv|Haifa": outputLanguage === "EN" ? "🇮🇱IL" : "🇮🇱以色列🔥",
+	"丹麦|Denmark|DK|Copenhagen|Aarhus|Odense": outputLanguage === "EN" ? "🇩🇰DK" : "🇩🇰丹麦🔥",
+	"挪威|奥斯陆|NO|Norway|Oslo": outputLanguage === "EN" ? "🇳🇴NO" : "🇳🇴挪威🔥",
+    "芬兰|赫尔辛基|FI|Finland|Helsinki": outputLanguage === "EN" ? "🇫🇮FI" : "🇫🇮芬兰🔥",
     "澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": outputLanguage === "EN" ? "🇦🇺AU" : "🇦🇺澳大利亚🌐",
     "美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago": outputLanguage === "EN" ? "🇺🇸US" : "🇺🇸美国🌐",
     "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal": outputLanguage === "EN" ? "🇨🇦CA" : "🇨🇦加拿大🌐",
@@ -23,6 +31,8 @@ const keywordsToNames = {
     "瑞士|苏黎世|日内瓦|CH|Switzerland|Zurich|Geneva": outputLanguage === "EN" ? "🇨🇭CH" : "🇨🇭瑞士🌐",
 	"印度|孟买|德里|班加罗尔|IN|India|Mumbai|Delhi|Bangalore": outputLanguage === "EN" ? "🇮🇳IN" : "🇮🇳印度🌐",
 	"俄罗斯|莫斯科|圣彼得堡|RU|Russia|Moscow|Saint Petersburg": outputLanguage === "EN" ? "🇷🇺RU" : "🇷🇺俄罗斯🌐",
+	"泰国|曼谷|清迈|TH|Thailand|Bangkok|Chiang Mai": outputLanguage === "EN" ? "🇹🇭TH" : "🇹🇭泰国🌐",
+    "马来西亚|吉隆坡|槟城|MY|Malaysia|Kuala Lumpur|Penang": outputLanguage === "EN" ? "🇲🇾MY" : "🇲🇾马来西亚🌐",
     "土耳其|伊斯坦布尔|安卡拉|TR|Turkey|Istanbul|Ankara": outputLanguage === "EN" ? "🇹🇷TR" : "🇹🇷土耳其",
     "西班牙|马德里|巴塞罗那|ES|Spain|Madrid|Barcelona": outputLanguage === "EN" ? "🇪🇸ES" : "🇪🇸西班牙",
     "瑞典|斯德哥尔摩|哥德堡|SE|Sweden|Stockholm|Gothenburg": outputLanguage === "EN" ? "🇸🇪SE" : "🇸🇪瑞典",
@@ -31,14 +41,10 @@ const keywordsToNames = {
     "墨西哥|墨西哥城|瓜达拉哈拉|MX|Mexico|Mexico City|Guadalajara": outputLanguage === "EN" ? "🇲🇽MX" : "🇲🇽墨西哥",
     "阿根廷|布宜诺斯艾利斯|AR|Argentina|Buenos Aires": outputLanguage === "EN" ? "🇦🇷AR" : "🇦🇷阿根廷",
     "波兰|华沙|克拉科夫|PL|Poland|Warsaw|Krakow": outputLanguage === "EN" ? "🇵🇱PL" : "🇵🇱波兰",
-    "泰国|曼谷|清迈|TH|Thailand|Bangkok|Chiang Mai": outputLanguage === "EN" ? "🇹🇭TH" : "🇹🇭泰国",
-    "马来西亚|吉隆坡|槟城|MY|Malaysia|Kuala Lumpur|Penang": outputLanguage === "EN" ? "🇲🇾MY" : "🇲🇾马来西亚",
     "越南|河内|胡志明|VN|Vietnam|Hanoi|Ho Chi Minh": outputLanguage === "EN" ? "🇻🇳VN" : "🇻🇳越南",
     "菲律宾|马尼拉|PH|Philippines|Manila": outputLanguage === "EN" ? "🇵🇭PH" : "🇵🇭菲律宾",
     "埃及|开罗|EG|Egypt|Cairo": outputLanguage === "EN" ? "🇪🇬EG" : "🇪🇬埃及",
     "沙特|利雅得|吉达|SA|Saudi Arabia|Riyadh|Jeddah": outputLanguage === "EN" ? "🇸🇦SA" : "🇸🇦沙特阿拉伯",
-    "挪威|奥斯陆|NO|Norway|Oslo": outputLanguage === "EN" ? "🇳🇴NO" : "🇳🇴挪威",
-    "芬兰|赫尔辛基|FI|Finland|Helsinki": outputLanguage === "EN" ? "🇫🇮FI" : "🇫🇮芬兰",
     "奥地利|维也纳|AT|Austria|Vienna": outputLanguage === "EN" ? "🇦🇹AT" : "🇦🇹奥地利",
     "希腊|雅典|GR|Greece|Athens": outputLanguage === "EN" ? "🇬🇷GR" : "🇬🇷希腊",
     "匈牙利|布达佩斯|HU|Hungary|Budapest": outputLanguage === "EN" ? "🇭🇺HU" : "🇭🇺匈牙利",
@@ -58,14 +64,12 @@ const keywordsToNames = {
     "塞尔维亚|Serbia|RS|Belgrade|Novi Sad|Niš": outputLanguage === "EN" ? "🇷🇸RS" : "🇷🇸塞尔维亚",
     "立陶宛|Lithuania|LT|Vilnius|Kaunas|Klaipėda": outputLanguage === "EN" ? "🇱🇹LT" : "🇱🇹立陶宛",
     "危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango": outputLanguage === "EN" ? "🇬🇹GT" : "🇬🇹危地马拉",
-    "丹麦|Denmark|DK|Copenhagen|Aarhus|Odense": outputLanguage === "EN" ? "🇩🇰DK" : "🇩🇰丹麦",
     "乌克兰|Ukraine|UA|Kyiv|Lviv|Odesa": outputLanguage === "EN" ? "🇺🇦UA" : "🇺🇦乌克兰",
     "厄瓜多尔|Ecuador|EC|Quito|Guayaquil|Cuenca": outputLanguage === "EN" ? "🇪🇨EC" : "🇪🇨厄瓜多尔",
     "哥斯达黎加|Costa Rica|CR|San José|Alajuela|Cartago": outputLanguage === "EN" ? "🇨🇷CR" : "🇨🇷哥斯达黎加",
     "塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca": outputLanguage === "EN" ? "🇨🇾CY" : "🇨🇾塞浦路斯",
     "比利时|Belgium|BE|Brussels|Antwerp|Ghent": outputLanguage === "EN" ? "🇧🇪BE" : "🇧🇪比利时",
     "玻利维亚|Bolivia|BO|Sucre|La Paz|Santa Cruz": outputLanguage === "EN" ? "🇧🇴BO" : "🇧🇴玻利维亚",
-
 };
 
 // 过滤关键词，防止无效或广告节点
@@ -83,16 +87,16 @@ const filterKeywords = [
 // 定义保留的关键词及其替换词
 const keywordsMap = {
     "ChatGPT": "GPT",
-     "解锁": "解",
-    "中转": "中转",
 	"t.me": "",
-	"ccbaohe.com":"老王"
+	"ccbaohe.com":"LW"
 };
 
 // 检查是否包含过滤关键词
 if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return false;
+
 // 保留跳过的关键词部分
 let preservedParts = [], newTitle = $server.title;
+
 // 提取并移除跳过的关键词部分
 for (const kw in keywordsMap) {
     let match = newTitle.match(new RegExp(kw, 'i'));
@@ -101,6 +105,7 @@ for (const kw in keywordsMap) {
         newTitle = newTitle.replace(match[0], '');
     }
 }
+
 let titleFlag = false;
 for (const keyword in keywordsToNames) {
     if (new RegExp(keyword, 'i').test(newTitle)) {
@@ -109,8 +114,11 @@ for (const keyword in keywordsToNames) {
         break;
     }
 }
+
 if (!titleFlag) return false;
- newTitle = customCharStart + newTitle;
+
+newTitle = customCharStart + newTitle;
+
 const map = globalThis.map || (globalThis.map = {});
 
 if (!map[newTitle]) {
@@ -118,7 +126,10 @@ if (!map[newTitle]) {
 } else {
     newTitle = `${newTitle}-${++map[newTitle]}`;
 }
+
 newTitle += customCharEnd;
+
 if (preservedParts.length) newTitle += ' ' + preservedParts.join(' ');
+
 $server.title = newTitle;
 return true;
