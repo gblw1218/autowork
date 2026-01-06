@@ -1,7 +1,7 @@
 let customCharStart = "LW-";
 let customCharEnd = "";
 const outputLanguage = "CN";
-
+globalThis.nodeCount = 0;
 const filteredTypes = ["trojan", "udp"]; // 要过滤的协议类型
 if (filteredTypes.includes($server.type?.toLowerCase())) {
     return false; 
@@ -133,9 +133,8 @@ for (const keyword in keywordsToNames) {
 }
 
 if (!titleFlag) return false;
-const nodeCount = globalThis.nodeCount || (globalThis.nodeCount = 0);
-++nodeCount;
-newTitle = customCharStart + nodeCount + newTitle;
+let nodeCount = globalThis.nodeCount;
+newTitle = `${customCharStart}${++nodeCount}` + newTitle;
 
 const map = globalThis.map || (globalThis.map = {});
 
