@@ -1,7 +1,6 @@
 let customCharStart = "LW-";
 let customCharEnd = "";
 const outputLanguage = "CN";
-globalThis.nodeCount = 0;
 const filteredTypes = ["trojan", "udp"]; // 要过滤的协议类型
 if (filteredTypes.includes($server.type?.toLowerCase())) {
     return false; 
@@ -133,16 +132,16 @@ for (const keyword in keywordsToNames) {
 }
 
 if (!titleFlag) return false;
-let nodeCount = globalThis.nodeCount;
-newTitle = `${customCharStart}${++nodeCount}` + newTitle;
 
 const map = globalThis.map || (globalThis.map = {});
-
+if(!map["totalNode"]){
+    map["totalNode"] = 0;
+}
 if (!map[newTitle]) {
     map[newTitle] = 1;
-    newTitle = `${newTitle}-1`;
+    newTitle = `${customCharStart}${++map["totalNode"]}${newTitle}-1`;
 } else {
-    newTitle = `${newTitle}-${++map[newTitle]}`;
+    newTitle = `${customCharStart}${++map["totalNode"]}${newTitle}-${++map[newTitle]}`;
 }
 
 newTitle += customCharEnd;
