@@ -1,5 +1,5 @@
-trojan://1a17b19d-4896-4531-af79-6e91d8ef8228@18.181.197.132:6688?allowInsecure=1&peer=baidu.com&sni=baidu.com#end-gfw.com
-trojan://1a17b19d-4896-4531-af79-6e91d8ef8228@52.79.84.216:6688?allowInsecure=1&peer=baidu.com&sni=baidu.com#end-gfw.com
+trojan://1a17b19d-4896-4531-af79-6e91d8ef8228@43.207.112.170:6688?allowInsecure=1&peer=baidu.com&sni=baidu.com#end-gfw.com
+trojan://1a17b19d-4896-4531-af79-6e91d8ef8228@3.36.55.149:6688?allowInsecure=1&peer=baidu.com&sni=baidu.com#end-gfw.com
 trojan://3bcd9e33-8377-4b32-af33-217158577ff3@170.64.220.25:443/?type=tcp&security=tls&sni=kdlsupport.zendesk.com#%F0%9F%87%A6%F0%9F%87%BAAU%28AzadNet.t.me%29
 trojan://61605c66-6d41-4b9d-a496-b9898f3f95d0@103.224.212.211:443/?type=tcp&security=tls&sni=jp-h1.sshub.xyz&allowInsecure=1&fp=chrome#%F0%9F%87%A6%F0%9F%87%BAAU%28AzadNet.t.me%29%20%281%29
 trojan://b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa@103.224.212.217:443/?type=tcp&security=tls&sni=dl.kgvn.garenanow.com&allowInsecure=1&fp=chrome#%F0%9F%87%A6%F0%9F%87%BAAU%28AzadNet.t.me%29%20%282%29
@@ -276,19 +276,20 @@ trojan://vwhoUdVRNtFBKstJd1gpuA@64.225.81.161:7393?security=none&headerType=none
 trojan://vwhoUdVRNtFBKstJd1gpuA@137.74.41.156:7494?security=none&headerType=none&type=tcp#%3E%3E%40v2rayNG_Matsuri%3A%3AFR
 trojan://vwhoUdVRNtFBKstJd1gpuA@64.225.93.183:7391?security=none&headerType=none&type=tcp#%3E%3E%40v2rayNG_Matsuri%3A%3ADE
 trojan://vwhoUdVRNtFBKstJd1gpuA@209.97.191.29:7392?security=none&headerType=none&type=tcp#%3E%3E%40v2rayNG_Matsuri%3A%3AGB
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.196.59:3901?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.196.59-0397
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.196.59:1281?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.196.59-0406
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.63.16:1281?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.63.16-4861
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.116.227:3901?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.116.227-0893
-trojan://381f2e86233720eacda26d50e9aa26da@202.181.103.246:1933?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-202.181.103.246-0372
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.196.59:1933?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.196.59-0376
-trojan://381f2e86233720eacda26d50e9aa26da@202.181.103.246:4006?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-202.181.103.246-4855
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.144.208:1281?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.144.208-0896
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.196.59:4006?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.196.59-0374
-trojan://381f2e86233720eacda26d50e9aa26da@202.181.103.246:3901?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-202.181.103.246-0405
-trojan://381f2e86233720eacda26d50e9aa26da@202.181.103.246:1281?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-202.181.103.246-0399
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.144.208:1933?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.144.208-0892
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.144.208:4006?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.144.208-0891
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.144.208:1933?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.144.208-0378
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.144.208:3901?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.144.208-0884
+trojan://381f2e86233720eacda26d50e9aa26da@202.181.103.246:1933?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-202.181.103.246-0361
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.144.208:4006?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.144.208-0385
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.196.59:3901?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.196.59-4803
+trojan://381f2e86233720eacda26d50e9aa26da@202.181.103.246:3901?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-202.181.103.246-0364
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.116.227:3901?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.116.227-0360
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.196.59:4006?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.196.59-0326
+trojan://381f2e86233720eacda26d50e9aa26da@202.181.103.246:1281?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-202.181.103.246-0314
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.116.227:1281?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.116.227-0322
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.144.208:1281?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.144.208-0430
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.63.16:3901?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.63.16-4807
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.63.16:1281?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.63.16-4811
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.196.59:1281?security=tls&sni=www.nintendogames.net#%F0%9F%87%AF%F0%9F%87%B5JP-160.16.196.59-0331
 trojan://da943f80-91e6-46df-b7ba-c6ecf28e0171@172.67.73.246:443/?type=ws&host=blueivy.qzz.io&path=%2F192.252.182.52%3A7602&security=tls&sni=blueivy.qzz.io&fp=chrome#%40Geek_Spot
 trojan://5a2c16f9@94.140.0.238:2096?security=tls&sni=snippets.kkii.eu.org&type=ws&host=snippets.kkii.eu.org&path=%2FTelegramU0001F1E8U0001F1F3WangCai2#VL-1016-018
 trojan://86558621-899b-4c51-89ce-7ef44f247226@green2.cdntencentmusic.com:31101?security=tls&sni=green2.cdntencentmusic.com&type=tcp&headerType=none#%E9%A6%99%E6%B8%AF%28yudou789.top%20%E7%8E%89%E8%B1%86%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%29
@@ -339,7 +340,6 @@ trojan://5a2c16f9@194.107.126.20:556?allowInsecure=0&sni=snippets.kkii.eu.org&ws
 trojan://554f139b-f31f-41c4-99f9-73d60647db26@193.23.197.183:443?allowInsecure=1&sni=snippets.kkii.eu.org&ws=1&wspath=%252FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3WangCai2#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU
 trojan://ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0@64.188.70.20:443?allowInsecure=1&sni=snippets.kkii.eu.org&ws=1&wspath=%252FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3WangCai2#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU
 trojan://554f139b-f31f-41c4-99f9-73d60647db26@202.61.254.159:443?allowInsecure=1&sni=snippets.kkii.eu.org&ws=1&wspath=%252FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3WangCai2#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU
-trojan://381f2e86233720eacda26d50e9aa26da@160.16.116.227:1281?sni=
 trojan://665c944d-047d-4659-80d5-3eaac70241a9@139.162.158.172:443?security=tls&sni=de2-full.privateip.net#%E6%9C%AA%E7%9F%A522
 trojan://telegram-id-privatevpns@13.50.16.231:22222?security=tls&sni=trj.rollingnext.co.uk#%E6%9C%AA%E7%9F%A55
 trojan://2cf6d686799e6fa95316394064f26c0a@58.152.18.55:443?security=tls&sni=www.nintendogames.net#%F0%9F%87%AD%F0%9F%87%B0HK-58.152.18.55-2001
@@ -502,6 +502,7 @@ trojan://telegram-id-directvpn@35.182.251.60:22222?security=tls&sni=trj.rollingn
 trojan://64de1de7-e3bb-3dc4-ab04-d1e601e18ac5@hn.xiaohouzi.club:48431?security=tls&sni=hn.xiaohouzi.club#⚡ b2n.ir/v2ray-configs | 924
 trojan://dfbf0d67-f03d-4184-a224-c2d64a571f99@s1.hazz.win:12340?security=tls&sni=edge.apple.com#⚡ b2n.ir/v2ray-configs | 128
 trojan://xSYy8KOpEyOjgaNFCeC3a72DS6wBAcz90pDZRRSXnxquIFZlT5433ClYD38aeA@45.64.22.55:443?security=tls&sni=yokoha.freetrade.link#⚡ b2n.ir/v2ray-configs | 647
+trojan://381f2e86233720eacda26d50e9aa26da@160.16.196.59:1933?security=tls&sni=www.nintendogames.net#⚡ b2n.ir/v2ray-configs | 999
 trojan://bb5b1337-fa9e-4e00-b8c6-1110e626171d@119.247.119.212:443?security=tls&sni=sg-01.tiktokcdn.top#⚡ b2n.ir/v2ray-configs | 810
 trojan://7d223bae-e183-4bf6-89c3-e327b15df490@183.236.51.7:10826?security=tls#⚡ b2n.ir/v2ray-configs | 7
 trojan://q9870219@181.214.99.54:2035?security=tls&sni=ht.lljllj.buzz#⚡ b2n.ir/v2ray-configs | 255

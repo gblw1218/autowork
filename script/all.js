@@ -1,90 +1,89 @@
 let customCharStart = "#";
 let customCharEnd = "";
-const outputLanguage = "CN";
 const filteredTypes = ["trojan", "udp"]; // 要过滤的协议类型
 if (filteredTypes.includes($server.type?.toLowerCase())) {
     return false; 
 }
 
 const keywordsToNames = {
-    "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao": outputLanguage === "EN" ? "twHMT" : "🇭🇰港澳台🚀",
-	"新加坡|狮城|SG|Singapore": outputLanguage === "EN" ? "🇸🇬SG" : "🇸🇬新加坡🚀",
-    "日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya": outputLanguage === "EN" ? "🇯🇵JP" : "🇯🇵日本🚀",
-    "韩国|首尔|釜山|KR|Korea|Seoul|Busan": outputLanguage === "EN" ? "🇰🇷KR" : "🇰🇷韩国🚀",
-	"澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": outputLanguage === "EN" ? "🇦🇺AU" : "🇦🇺澳大利亚🚀",
-    "美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago": outputLanguage === "EN" ? "🇺🇸US" : "🇺🇸美国🚀",
-    "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal": outputLanguage === "EN" ? "🇨🇦CA" : "🇨🇦加拿大🚀",
-    "阿联酋|迪拜|阿布扎比|AE|UAE|Dubai|Abu Dhabi": outputLanguage === "EN" ? "🇦🇪AE" : "🇦🇪阿联酋🚀",
-    "以色列|Israel|IL|Jerusalem|Tel Aviv|Haifa": outputLanguage === "EN" ? "🇮🇱IL" : "🇮🇱以色列🚀",
-    "丹麦|Denmark|DK|Copenhagen|Aarhus|Odense": outputLanguage === "EN" ? "🇩🇰DK" : "🇩🇰丹麦🚀",
-    "挪威|奥斯陆|NO|Norway|Oslo": outputLanguage === "EN" ? "🇳🇴NO" : "🇳🇴挪威🚀",
-    "芬兰|赫尔辛基|FI|Finland|Helsinki": outputLanguage === "EN" ? "🇫🇮FI" : "🇫🇮芬兰🚀",
-    "卡塔尔|多哈|QA|Qatar|Doha": outputLanguage === "EN" ? "🇶🇦QA" : "🇶🇦卡塔尔🚀",
-    "卢森堡|Luxembourg|LU|Luxembourg City": outputLanguage === "EN" ? "🇱🇺LU" : "🇱🇺卢森堡🚀",
-    "爱沙尼亚|Estonia|EE|Tallinn": outputLanguage === "EN" ? "🇪🇪EE" : "🇪🇪爱沙尼亚🚀",
-    "法国|巴黎|里昂|马赛|FR|France|Paris|Lyon|Marseille": outputLanguage === "EN" ? "🇫🇷FRA" : "🇫🇷法国🔥",
-    "智利|圣地亚哥|CL|Chile|Santiago": outputLanguage === "EN" ? "🇨🇱CL" : "🇨🇱智利🔥",
-    "爱尔兰|都柏林|IE|Ireland|Dublin": outputLanguage === "EN" ? "🇮🇪IRL" : "🇮🇪爱尔兰🔥",
-    "冰岛|雷克雅未克|IS|Iceland|Reykjavik": outputLanguage === "EN" ? "🇮🇸IS" : "🇮🇸冰岛🔥",
-    "德国|法兰克福|柏林|慕尼黑|DE|Germany|Frankfurt|Berlin|Munich": outputLanguage === "EN" ? "🇩🇪DE" : "🇩🇪德国🔥",
-    "英国|伦敦|曼彻斯特|伯明翰|GB|UK|United Kingdom|London|Manchester|Birmingham": outputLanguage === "EN" ? "🇬🇧GB" : "🇬🇧英国🔥",
-    "意大利|罗马|米兰|那不勒斯|IT|Italy|Rome|Milan|Naples": outputLanguage === "EN" ? "🇮🇹IT" : "🇮🇹意大利🔥",
-    "荷兰|阿姆斯特丹|鹿特丹|NL|Netherlands|Amsterdam|Rotterdam": outputLanguage === "EN" ? "🇳🇱NL" : "🇳🇱荷兰🔥",
-    "瑞士|苏黎世|日内瓦|CH|Switzerland|Zurich|Geneva": outputLanguage === "EN" ? "🇨🇭CH" : "🇨🇭瑞士🔥",
-    "印度|孟买|德里|班加罗尔|IN|India|Mumbai|Delhi|Bangalore": outputLanguage === "EN" ? "🇮🇳IN" : "🇮🇳印度🔥",
-    "俄罗斯|莫斯科|圣彼得堡|RU|Russia|Moscow|Saint Petersburg": outputLanguage === "EN" ? "🇷🇺RU" : "🇷🇺俄罗斯🔥",
-    "泰国|曼谷|清迈|TH|Thailand|Bangkok|Chiang Mai": outputLanguage === "EN" ? "🇹🇭TH" : "🇹🇭泰国🔥",
-    "马来西亚|吉隆坡|槟城|MY|Malaysia|Kuala Lumpur|Penang": outputLanguage === "EN" ? "🇲🇾MY" : "🇲🇾马来西亚🔥",
-    "比利时|Belgium|BE|Brussels|Antwerp|Ghent": outputLanguage === "EN" ? "🇧🇪BE" : "🇧🇪比利时🔥",
-    "奥地利|维也纳|AT|Austria|Vienna": outputLanguage === "EN" ? "🇦🇹AT" : "🇦🇹奥地利🔥",
-    "新西兰|奥克兰|NZ|New Zealand|Auckland": outputLanguage === "EN" ? "🇳🇿NZ" : "🇳🇿新西兰🔥",
-    "瑞典|斯德哥尔摩|哥德堡|SE|Sweden|Stockholm|Gothenburg": outputLanguage === "EN" ? "🇸🇪SE" : "🇸🇪瑞典🔥",
-    "沙特|利雅得|吉达|SA|Saudi Arabia|Riyadh|Jeddah": outputLanguage === "EN" ? "🇸🇦SA" : "🇸🇦沙特🔥",
-    "印度尼西亚|雅加达|ID|Indonesia|Jakarta": outputLanguage === "EN" ? "🇮🇩ID" : "🇮🇩印尼🔥",
-    "斯洛文尼亚|Slovenia|SI|Ljubljana": outputLanguage === "EN" ? "🇸🇮SI" : "🇸🇮斯洛文尼亚🔥",
-    "拉脱维亚|Latvia|LV|Riga": outputLanguage === "EN" ? "🇱🇻LV" : "🇱🇻拉脱维亚🔥",
-    "克罗地亚|Croatia|HR|Zagreb": outputLanguage === "EN" ? "🇭🇷HR" : "🇭🇷克罗地亚🔥",
-    "巴林|Bahrain|BH|Manama": outputLanguage === "EN" ? "🇧🇭BH" : "🇧🇭巴林🔥",
-    "科威特|Kuwait|KW|Kuwait City": outputLanguage === "EN" ? "🇰🇼KW" : "🇰🇼科威特🔥",
-	"越南|河内|胡志明|VN|Vietnam|Hanoi|Ho Chi Minh": outputLanguage === "EN" ? "🇻🇳VN" : "🇻🇳越南🔥",
-	"尼日利亚|拉各斯|NG|Nigeria|Lagos": outputLanguage === "EN" ? "🇳🇬NG" : "🇳🇬尼日利亚🔥",
-	"菲律宾|马尼拉|PH|Philippines|Manila": outputLanguage === "EN" ? "🇵🇭PH" : "🇵🇭菲律宾🔥",
-	"南非|约翰内斯堡|开普敦|ZA|South Africa|Johannesburg|Cape Town": outputLanguage === "EN" ? "🇿🇦ZA" : "🇿🇦南非🔥",
-    "土耳其|伊斯坦布尔|安卡拉|TR|Turkey|Istanbul|Ankara": outputLanguage === "EN" ? "🇹🇷TR" : "🇹🇷土耳其💎",
-    "西班牙|马德里|巴塞罗那|ES|Spain|Madrid|Barcelona": outputLanguage === "EN" ? "🇪🇸ES" : "🇪🇸西班牙💎",
-    "巴西|圣保罗|里约热内卢|BR|Brazil|São Paulo|Rio de Janeiro": outputLanguage === "EN" ? "🇧🇷BR" : "🇧🇷巴西💎",
-    "墨西哥|墨西哥城|瓜达拉哈拉|MX|Mexico|Mexico City|Guadalajara": outputLanguage === "EN" ? "🇲🇽MX" : "🇲🇽墨西哥💎",
-    "阿根廷|布宜诺斯艾利斯|AR|Argentina|Buenos Aires": outputLanguage === "EN" ? "🇦🇷AR" : "🇦🇷阿根廷💎",
-    "波兰|华沙|克拉科夫|PL|Poland|Warsaw|Krakow": outputLanguage === "EN" ? "🇵🇱PL" : "🇵🇱波兰💎",
-    "埃及|开罗|EG|Egypt|Cairo": outputLanguage === "EN" ? "🇪🇬EG" : "🇪🇬埃及💎",
-    "希腊|雅典|GR|Greece|Athens": outputLanguage === "EN" ? "🇬🇷GR" : "🇬🇷希腊💎",
-    "匈牙利|布达佩斯|HU|Hungary|Budapest": outputLanguage === "EN" ? "🇭🇺HU" : "🇭🇺匈牙利💎",
-    "捷克|布拉格|CZ|Czech|Prague": outputLanguage === "EN" ? "🇨🇿CZ" : "🇨🇿捷克💎",
-    "尼泊尔|加德满都|NP|Nepal|Kathmandu": outputLanguage === "EN" ? "🇳🇵NP" : "🇳🇵尼泊尔💎",
-    "葡萄牙|里斯本|PT|Portugal|Lisbon": outputLanguage === "EN" ? "🇵🇹PT" : "🇵🇹葡萄牙💎",
-    "巴基斯坦|伊斯兰堡|PK|Pakistan|Islamabad": outputLanguage === "EN" ? "🇵🇰PK" : "🇵🇰巴基斯坦💎",
-    "伊朗|德黑兰|IR|Iran|Tehran": outputLanguage === "EN" ? "🇮🇷IR" : "🇮🇷伊朗💎",
-    "伊拉克|巴格达|IQ|Iraq|Baghdad": outputLanguage === "EN" ? "🇮🇶IQ" : "🇮🇶伊拉克💎",
-    "阿尔及利亚|阿尔及尔|DZ|Algeria|Algiers": outputLanguage === "EN" ? "🇩🇿DZ" : "🇩🇿阿尔及利亚💎",
-    "摩洛哥|拉巴特|MA|Morocco|Rabat": outputLanguage === "EN" ? "🇲🇦MA" : "🇲🇦摩洛哥💎",
-    "秘鲁|利马|PE|Peru|Lima": outputLanguage === "EN" ? "🇵🇪PE" : "🇵🇪秘鲁💎",
-    "哥伦比亚|波哥大|CO|Colombia|Bogotá": outputLanguage === "EN" ? "🇨🇴CO" : "🇨🇴哥伦比亚💎",
-    "罗马尼亚|Romania|RO|Bucharest|Cluj-Napoca|Timișoara": outputLanguage === "EN" ? "🇷🇴RO" : "🇷🇴罗马尼亚💎",
-    "塞尔维亚|Serbia|RS|Belgrade|Novi Sad|Niš": outputLanguage === "EN" ? "🇷🇸RS" : "🇷🇸塞尔维亚💎",
-    "立陶宛|Lithuania|LT|Vilnius|Kaunas|Klaipėda": outputLanguage === "EN" ? "🇱🇹LT" : "🇱🇹立陶宛💎",
-    "危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango": outputLanguage === "EN" ? "🇬🇹GT" : "🇬🇹危地马拉💎",
-    "乌克兰|Ukraine|UA|Kyiv|Lviv|Odesa": outputLanguage === "EN" ? "🇺🇦UA" : "🇺🇦乌克兰💎",
-    "厄瓜多尔|Ecuador|EC|Quito|Guayaquil|Cuenca": outputLanguage === "EN" ? "🇪🇨EC" : "🇪🇨厄瓜多尔💎",
-    "哥斯达黎加|Costa Rica|CR|San José|Alajuela|Cartago": outputLanguage === "EN" ? "🇨🇷CR" : "🇨🇷哥斯达黎加💎",
-    "塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca": outputLanguage === "EN" ? "🇨🇾CY" : "🇨🇾塞浦路斯💎",
-    "玻利维亚|Bolivia|BO|Sucre|La Paz|Santa Cruz": outputLanguage === "EN" ? "🇧🇴BO" : "🇧🇴玻利维亚💎",
-    "乌拉圭|蒙得维的亚|UY|Uruguay|Montevideo": outputLanguage === "EN" ? "🇺🇾UY" : "🇺🇾乌拉圭💎",
-    "委内瑞拉|加拉加斯|VE|Venezuela|Caracas": outputLanguage === "EN" ? "🇻🇪VE" : "🇻🇪委内瑞拉💎",
-    "突尼斯|Tunisia|TN|Tunis": outputLanguage === "EN" ? "🇹🇳TN" : "🇹🇳突尼斯💎",
-    "加纳|阿克拉|GH|Ghana|Accra": outputLanguage === "EN" ? "🇬🇭GH" : "🇬🇭加纳💎",
-    "肯尼亚|内罗毕|KE|Kenya|Nairobi": outputLanguage === "EN" ? "🇰🇪KE" : "🇰🇪肯尼亚💎",
-    "斯里兰卡|科伦坡|LK|Sri Lanka|Colombo": outputLanguage === "EN" ? "🇱🇰LK" : "🇱🇰斯里兰卡💎",
-    "孟加拉国|达卡|BD|Bangladesh|Dhaka": outputLanguage === "EN" ? "🇧🇩BD" : "🇧🇩孟加拉国💎",
+"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao":  {area:"🇭🇰港澳台",flag:"🚀"},
+"新加坡|狮城|SG|Singapore": {area:"🇸🇬新加坡",flag:"🚀"},
+"日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
+"韩国|首尔|釜山|KR|Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
+"澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": {area:"🇦🇺澳大利亚",flag:"🚀"},
+"美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago":  {area:"🇺🇸美国",flag:"🚀"},
+"加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal":  {area:"🇨🇦加拿大",flag:"🚀"},
+"阿联酋|迪拜|阿布扎比|AE|UAE|Dubai|Abu Dhabi":  {area:"🇦🇪阿联酋",flag:"🚀"},
+"以色列|Israel|IL|Jerusalem|Tel Aviv|Haifa":  {area:"🇮🇱以色列",flag:"🚀"},
+"丹麦|Denmark|DK|Copenhagen|Aarhus|Odense":  {area:"🇩🇰丹麦",flag:"🚀"},
+"挪威|奥斯陆|NO|Norway|Oslo":  {area:"🇳🇴挪威",flag:"🚀"},
+"芬兰|赫尔辛基|FI|Finland|Helsinki":  {area:"🇫🇮芬兰",flag:"🚀"},
+"卡塔尔|多哈|QA|Qatar|Doha":  {area:"🇶🇦卡塔尔",flag:"🚀"},
+"卢森堡|Luxembourg|LU|Luxembourg City":  {area:"🇱🇺卢森堡",flag:"🚀"},
+"爱沙尼亚|Estonia|EE|Tallinn":  {area:"🇪🇪爱沙尼亚",flag:"🚀"},
+"法国|巴黎|里昂|马赛|FR|France|Paris|Lyon|Marseille":  {area:"🇫🇷法国",flag:"🔥"},
+"智利|圣地亚哥|CL|Chile|Santiago": {area:"🇨🇱智利",flag:"🔥"},
+"爱尔兰|都柏林|IE|Ireland|Dublin": {area:"🇮🇪爱尔兰",flag:"🔥"},
+"冰岛|雷克雅未克|IS|Iceland|Reykjavik": {area:"🇮🇸冰岛",flag:"🔥"},
+"德国|法兰克福|柏林|慕尼黑|DE|Germany|Frankfurt|Berlin|Munich":  {area:"🇩🇪德国",flag:"🔥"},
+"英国|伦敦|曼彻斯特|伯明翰|GB|UK|United Kingdom|London|Manchester|Birmingham":  {area:"🇬🇧英国",flag:"🔥"},
+"意大利|罗马|米兰|那不勒斯|IT|Italy|Rome|Milan|Naples":  {area:"🇮🇹意大利",flag:"🔥"},
+"荷兰|阿姆斯特丹|鹿特丹|NL|Netherlands|Amsterdam|Rotterdam":{area:"🇳🇱荷兰",flag:"🔥"},
+"瑞士|苏黎世|日内瓦|CH|Switzerland|Zurich|Geneva": {area:"🇨🇭瑞士",flag:"🔥"},
+"印度|孟买|德里|班加罗尔|IN|India|Mumbai|Delhi|Bangalore": {area:"🇮🇳印度",flag:"🔥"},
+"俄罗斯|莫斯科|圣彼得堡|RU|Russia|Moscow|Saint Petersburg": {area:"🇷🇺俄罗斯",flag:"🔥"},
+"泰国|曼谷|清迈|TH|Thailand|Bangkok|Chiang Mai": {area:"🇹🇭泰国",flag:"🔥"},
+"马来西亚|吉隆坡|槟城|MY|Malaysia|Kuala Lumpur|Penang": {area:"🇲🇾马来西亚",flag:"🔥"},
+"比利时|Belgium|BE|Brussels|Antwerp|Ghent":  {area:"🇧🇪比利时",flag:"🔥"},
+"奥地利|维也纳|AT|Austria|Vienna": {area:"🇦🇹奥地利",flag:"🔥"},
+"新西兰|奥克兰|NZ|New Zealand|Auckland": {area:"🇳🇿新西兰",flag:"🔥"},
+"瑞典|斯德哥尔摩|哥德堡|SE|Sweden|Stockholm|Gothenburg":  {area:"🇸🇪瑞典",flag:"🔥"},
+"沙特|利雅得|吉达|SA|Saudi Arabia|Riyadh|Jeddah":  {area:"🇸🇦沙特",flag:"🔥"},
+"印度尼西亚|雅加达|ID|Indonesia|Jakarta":  {area:"🇮🇩印尼",flag:"🔥"},
+"斯洛文尼亚|Slovenia|SI|Ljubljana": {area:"🇸🇮斯洛文尼亚",flag:"🔥"},
+"拉脱维亚|Latvia|LV|Riga":  {area:"🇱🇻拉脱维亚",flag:"🔥"},
+"克罗地亚|Croatia|HR|Zagreb": {area:"🇭🇷克罗地亚",flag:"🔥"},
+"巴林|Bahrain|BH|Manama":  {area:"🇧🇭巴林",flag:"🔥"},
+"科威特|Kuwait|KW|Kuwait City":  {area:"🇰🇼科威特",flag:"🔥"},
+"越南|河内|胡志明|VN|Vietnam|Hanoi|Ho Chi Minh": {area:"🇻🇳越南",flag:"🔥"},
+"尼日利亚|拉各斯|NG|Nigeria|Lagos":  {area:"🇳🇬尼日利亚",flag:"🔥"},
+"菲律宾|马尼拉|PH|Philippines|Manila":  {area:"🇵🇭菲律宾",flag:"🔥"},
+"南非|约翰内斯堡|开普敦|ZA|South Africa|Johannesburg|Cape Town": {area:"🇿🇦南非",flag:"🔥"},
+"土耳其|伊斯坦布尔|安卡拉|TR|Turkey|Istanbul|Ankara":  {area:"🇹🇷土耳其",flag:"💎"},
+"西班牙|马德里|巴塞罗那|ES|Spain|Madrid|Barcelona": {area:"🇪🇸西班牙",flag:"💎"},
+"巴西|圣保罗|里约热内卢|BR|Brazil|São Paulo|Rio de Janeiro": {area:"🇧🇷巴西",flag:"💎"},
+"墨西哥|墨西哥城|瓜达拉哈拉|MX|Mexico|Mexico City|Guadalajara":  {area:"🇲🇽墨西哥",flag:"💎"},
+"阿根廷|布宜诺斯艾利斯|AR|Argentina|Buenos Aires":  {area:"🇦🇷阿根廷",flag:"💎"},
+"波兰|华沙|克拉科夫|PL|Poland|Warsaw|Krakow": {area:"🇵🇱波兰",flag:"💎"},
+"埃及|开罗|EG|Egypt|Cairo":  {area:"🇪🇬埃及",flag:"💎"},
+"希腊|雅典|GR|Greece|Athens": {area:"🇬🇷希腊",flag:"💎"},
+"匈牙利|布达佩斯|HU|Hungary|Budapest":  {area:"🇭🇺匈牙利",flag:"💎"},
+"捷克|布拉格|CZ|Czech|Prague":  {area:"🇨🇿捷克",flag:"💎"},
+"尼泊尔|加德满都|NP|Nepal|Kathmandu":{area:"🇳🇵尼泊尔",flag:"💎"},
+"葡萄牙|里斯本|PT|Portugal|Lisbon": {area:"🇵🇹葡萄牙",flag:"💎"},
+"巴基斯坦|伊斯兰堡|PK|Pakistan|Islamabad":  {area:"🇵🇰巴基斯坦",flag:"💎"},
+"伊朗|德黑兰|IR|Iran|Tehran":  {area:"🇮🇷伊朗",flag:"💎"},
+"伊拉克|巴格达|IQ|Iraq|Baghdad":  {area:"🇮🇶伊拉克",flag:"💎"},
+"阿尔及利亚|阿尔及尔|DZ|Algeria|Algiers":  {area:"🇩🇿阿尔及利亚",flag:"💎"},
+"摩洛哥|拉巴特|MA|Morocco|Rabat": {area:"🇲🇦摩洛哥",flag:"💎"},
+"秘鲁|利马|PE|Peru|Lima":{area:"🇵🇪秘鲁",flag:"💎"},
+"哥伦比亚|波哥大|CO|Colombia|Bogotá": {area:"🇨🇴哥伦比亚",flag:"💎"},
+"罗马尼亚|Romania|RO|Bucharest|Cluj-Napoca|Timișoara": {area:"🇷🇴罗马尼亚",flag:"💎"},
+"塞尔维亚|Serbia|RS|Belgrade|Novi Sad|Niš": {area:"🇷🇸塞尔维亚",flag:"💎"},
+"立陶宛|Lithuania|LT|Vilnius|Kaunas|Klaipėda":  {area:"🇱🇹立陶宛",flag:"💎"},
+"危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango":  {area:"🇬🇹危地马拉",flag:"💎"},
+"乌克兰|Ukraine|UA|Kyiv|Lviv|Odesa": {area:"🇺🇦乌克兰",flag:"💎"},
+"厄瓜多尔|Ecuador|EC|Quito|Guayaquil|Cuenca": {area:"🇪🇨厄瓜多尔",flag:"💎"},
+"哥斯达黎加|Costa Rica|CR|San José|Alajuela|Cartago":  {area:"🇨🇷哥斯达黎加",flag:"💎"},
+"塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca":  {area:"🇨🇾塞浦路斯",flag:"💎"},
+"玻利维亚|Bolivia|BO|Sucre|La Paz|Santa Cruz": {area:"🇧🇴玻利维亚",flag:"💎"},
+"乌拉圭|蒙得维的亚|UY|Uruguay|Montevideo": {area:"🇺🇾乌拉圭",flag:"💎"},
+"委内瑞拉|加拉加斯|VE|Venezuela|Caracas": {area:"🇻🇪委内瑞拉",flag:"💎"},
+"突尼斯|Tunisia|TN|Tunis": {area:"🇹🇳突尼斯",flag:"💎"},
+"加纳|阿克拉|GH|Ghana|Accra": {area:"🇬🇭加纳",flag:"💎"},
+"肯尼亚|内罗毕|KE|Kenya|Nairobi": {area:"🇰🇪肯尼亚",flag:"💎"},
+"斯里兰卡|科伦坡|LK|Sri Lanka|Colombo": {area:"🇱🇰斯里兰卡",flag:"💎"},
+"孟加拉国|达卡|BD|Bangladesh|Dhaka":  {area:"🇧🇩孟加拉国",flag:"💎"}
 
 };
 
@@ -123,9 +122,11 @@ for (const kw in keywordsMap) {
 }
 
 let titleFlag = false;
+let flagIcon = '';
 for (const keyword in keywordsToNames) {
     if (new RegExp(keyword, 'i').test(newTitle)) {
-        newTitle = keywordsToNames[keyword];
+        newTitle = keywordsToNames[keyword].area;
+        flagIcon = keywordsToNames[keyword].flag;
         titleFlag = true;
         break;
     }
@@ -139,9 +140,9 @@ if(!map["totalNode"]){
 }
 if (!map[newTitle]) {
     map[newTitle] = 1;
-    newTitle = `${customCharStart}${++map["totalNode"]}-1${newTitle}`;
+    newTitle = `${flagIcon}${customCharStart}${++map["totalNode"]}${newTitle}-1`;
 } else {
-    newTitle = `${customCharStart}${++map["totalNode"]}-${++map[newTitle]}${newTitle}`;
+    newTitle = `${flagIcon}${customCharStart}${++map["totalNode"]}${newTitle}-${++map[newTitle]}`;
 }
 
 newTitle += customCharEnd;
