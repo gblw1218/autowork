@@ -2,3 +2,4 @@ https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt
 https://github.com/Vauth/node/raw/main/Main,
 https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt,
 https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub
+https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt
