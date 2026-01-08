@@ -1,4 +1,4 @@
-let customCharStart = "LW-";
+let customCharStart = "#";
 let customCharEnd = "";
 const outputLanguage = "CN";
 const filteredTypes = ["trojan", "udp"]; // 要过滤的协议类型
@@ -7,10 +7,13 @@ if (filteredTypes.includes($server.type?.toLowerCase())) {
 }
 
 const keywordsToNames = {
-    "新加坡|狮城|SG|Singapore": outputLanguage === "EN" ? "🇸🇬SG" : "🇸🇬新加坡🚀",
     "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao": outputLanguage === "EN" ? "twHMT" : "🇭🇰港澳台🚀",
+	"新加坡|狮城|SG|Singapore": outputLanguage === "EN" ? "🇸🇬SG" : "🇸🇬新加坡🚀",
     "日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya": outputLanguage === "EN" ? "🇯🇵JP" : "🇯🇵日本🚀",
     "韩国|首尔|釜山|KR|Korea|Seoul|Busan": outputLanguage === "EN" ? "🇰🇷KR" : "🇰🇷韩国🚀",
+	"澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": outputLanguage === "EN" ? "🇦🇺AU" : "🇦🇺澳大利亚🚀",
+    "美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago": outputLanguage === "EN" ? "🇺🇸US" : "🇺🇸美国🚀",
+    "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal": outputLanguage === "EN" ? "🇨🇦CA" : "🇨🇦加拿大🚀",
     "阿联酋|迪拜|阿布扎比|AE|UAE|Dubai|Abu Dhabi": outputLanguage === "EN" ? "🇦🇪AE" : "🇦🇪阿联酋🚀",
     "以色列|Israel|IL|Jerusalem|Tel Aviv|Haifa": outputLanguage === "EN" ? "🇮🇱IL" : "🇮🇱以色列🚀",
     "丹麦|Denmark|DK|Copenhagen|Aarhus|Odense": outputLanguage === "EN" ? "🇩🇰DK" : "🇩🇰丹麦🚀",
@@ -19,9 +22,6 @@ const keywordsToNames = {
     "卡塔尔|多哈|QA|Qatar|Doha": outputLanguage === "EN" ? "🇶🇦QA" : "🇶🇦卡塔尔🚀",
     "卢森堡|Luxembourg|LU|Luxembourg City": outputLanguage === "EN" ? "🇱🇺LU" : "🇱🇺卢森堡🚀",
     "爱沙尼亚|Estonia|EE|Tallinn": outputLanguage === "EN" ? "🇪🇪EE" : "🇪🇪爱沙尼亚🚀",
-    "澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": outputLanguage === "EN" ? "🇦🇺AU" : "🇦🇺澳大利亚🔥",
-    "美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago": outputLanguage === "EN" ? "🇺🇸US" : "🇺🇸美国🔥",
-    "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal": outputLanguage === "EN" ? "🇨🇦CA" : "🇨🇦加拿大🔥",
     "法国|巴黎|里昂|马赛|FR|France|Paris|Lyon|Marseille": outputLanguage === "EN" ? "🇫🇷FRA" : "🇫🇷法国🔥",
     "智利|圣地亚哥|CL|Chile|Santiago": outputLanguage === "EN" ? "🇨🇱CL" : "🇨🇱智利🔥",
     "爱尔兰|都柏林|IE|Ireland|Dublin": outputLanguage === "EN" ? "🇮🇪IRL" : "🇮🇪爱尔兰🔥",
@@ -47,7 +47,9 @@ const keywordsToNames = {
     "巴林|Bahrain|BH|Manama": outputLanguage === "EN" ? "🇧🇭BH" : "🇧🇭巴林🔥",
     "科威特|Kuwait|KW|Kuwait City": outputLanguage === "EN" ? "🇰🇼KW" : "🇰🇼科威特🔥",
 	"越南|河内|胡志明|VN|Vietnam|Hanoi|Ho Chi Minh": outputLanguage === "EN" ? "🇻🇳VN" : "🇻🇳越南🔥",
-	"尼日利亚|拉各斯|NG|Nigeria|Lagos": outputLanguage === "EN" ? "🇳🇬NG" : "🇳🇬尼日利亚🔥"
+	"尼日利亚|拉各斯|NG|Nigeria|Lagos": outputLanguage === "EN" ? "🇳🇬NG" : "🇳🇬尼日利亚🔥",
+	"菲律宾|马尼拉|PH|Philippines|Manila": outputLanguage === "EN" ? "🇵🇭PH" : "🇵🇭菲律宾🔥",
+	"南非|约翰内斯堡|开普敦|ZA|South Africa|Johannesburg|Cape Town": outputLanguage === "EN" ? "🇿🇦ZA" : "🇿🇦南非🔥"
 };
 
 // 过滤关键词，防止无效或广告节点
@@ -101,9 +103,9 @@ if(!map["totalNode"]){
 }
 if (!map[newTitle]) {
     map[newTitle] = 1;
-    newTitle = `${customCharStart}1#${++map["totalNode"]}-${newTitle}`;
+    newTitle = `${customCharStart}${++map["totalNode"]}-1${newTitle}`;
 } else {
-    newTitle = `${customCharStart}${++map[newTitle]}#${++map["totalNode"]}-${newTitle}`;
+    newTitle = `${customCharStart}${++map["totalNode"]}-${++map[newTitle]}${newTitle}`;
 }
 
 newTitle += customCharEnd;
