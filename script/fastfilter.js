@@ -101,9 +101,9 @@ if(!map["totalNode"]){
 }
 if (!map[newTitle]) {
     map[newTitle] = 1;
-    newTitle = `${customCharStart}${++map["totalNode"]}${newTitle}-1`;
+    newTitle = `${customCharStart}1#${++map["totalNode"]}-${newTitle}`;
 } else {
-    newTitle = `${customCharStart}${++map["totalNode"]}${newTitle}-${++map[newTitle]}`;
+    newTitle = `${customCharStart}${++map[newTitle]}#${++map["totalNode"]}-${newTitle}`;
 }
 
 newTitle += customCharEnd;
