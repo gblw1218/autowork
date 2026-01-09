@@ -1,4 +1,4 @@
-let customCharStart = "#";
+let customCharStart = "序号";
 let customCharEnd = "";
 const filteredTypes = ["trojan", "udp"]; // 要过滤的协议类型
 if (filteredTypes.includes($server.type?.toLowerCase())) {
