@@ -68,12 +68,12 @@ vless://d8c3d1dc-d162-42bf-a1ca-69cd59d76f22@143.244.197.90:40188?mode=gun&secur
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@217.69.7.35:8880?mode=gun&security=none&encryption=none&type=grpc#@v2rayngzendegimamad🕊️
 vless://ee99096b-0f43-484a-bfd1-f7ecd75e809e@141.227.160.163:25537?mode=gun&security=none&encryption=none&type=grpc&serviceName=ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON#✅سرورهایبیشتردرکانال:prrofile_purple@✅
 vless://f594396e-0381-474e-b9d7-5c7fb98c6220@145.239.29.93:48215?mode=gun&security=none&encryption=none&type=grpc&serviceName=ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON#✅سرورهابیشتردرکانال:prrofile_purple@✅
-vless://f61a4285-7264-4d07-9408-7b9ba1922c26@25.25.25.253:2096?path=/&security=tls&encryption=none&insecure=0&host=gaosir.unfeeling.sbs&fp=chrome&type=ws&allowInsecure=0&sni=gaosir.unfeeling.sbs#78758] - Telegram : @V2All
+vless://f61a4285-7264-4d07-9408-7b9ba1922c26@25.25.25.253:2096?path=/&security=tls&encryption=none&insecure=0&host=gaosir.unfeeling.sbs&fp=chrome&type=ws&allowInsecure=0&sni=gaosir.unfeeling.sbs#[78758] - Telegram : @V2All
 vless://fa0ba10d-fa04-4638-9760-79c885db744d@82.115.6.43:2040?security=reality&encryption=none&pbk=1RJ2ulM9UyAC8PFy194dV0RTZI6xF6U4CGClhNz9fTg&headerType=none&fp=chrome&spx=/&type=tcp&sni=tradingview.com&sid=50ed6f6007515d63#@hopev2ray🩷
 vless://faa693f6-41eb-4c90-842c-876c989adc9c@165.140.119.117:8443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=ign.com&sid=6ba85179e30d4fc2#ALL-@V2rayAlpha--6
 vless://fc5f77ad-f5f8-4392-8177-90fac9fed22b@25.129.199.148:2053?path=/speedtest.net/zIrAkOmAmLe.CoM?ed=2048&security=tls&alpn=http/1.1&encryption=none&host=uSa.zIrAkOmAmLe.CoM&fp=chrome&type=ws#telegram@V2rayBaaz◇⃟💜
-vless://ff03e357-b531-4f30-9f47-ba9b57dd384f@46.151.26.175:4443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=github.com&fp=chrome&security=reality&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&sid=aa7e96542880027a#78744] - Telegram : @V2All
-vless://ff03e357-b531-4f30-9f47-ba9b57dd384f@5.129.236.170:4443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=github.com&fp=chrome&security=reality&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&sid=aa7e96542880027a#78745] - Telegram : @V2All
+vless://ff03e357-b531-4f30-9f47-ba9b57dd384f@46.151.26.175:4443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=github.com&fp=chrome&security=reality&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&sid=aa7e96542880027a#[78744] - Telegram : @V2All
+vless://ff03e357-b531-4f30-9f47-ba9b57dd384f@5.129.236.170:4443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=github.com&fp=chrome&security=reality&pbk=5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE&sid=aa7e96542880027a#[78745] - Telegram : @V2All
 vless://telegram-id-ArV2ray@25.129.197.233:2052?mode=auto&path=/-Arfilter@Arfilter-TEL--@Arfilter-TEL--@ArFilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter?ed=80&security=&encryption=none&host=cdn-alman5.arfilter2.blog&type=xhttp#@Capoit
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@62.100.205.100:990#%F0%9F%87%AC%F0%9F%87%A7GB-62.100.205.100-0281
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.217:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.217-0085
@@ -701,7 +701,7 @@ ss://96a1b724-68d2-4f4d-ab25-38ecd83577bc@45.131.208.168:2096?security=tls&sni=J
 ss://b5441b0d-2147-4898-8a6a-9b2c87f58382@102.177.189.3:8880?sni=Telegram-channel-WangCai2&type=ws&host=bitget1.asdasd.click&path=/Telegram
 ss://89b3cbba-e6ac-485a-9481-976a0415eab9@45.131.5.226:80?security=&type=ws&host=uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz&encryption=none#
 ss://c5293efa-28f8-4a0f-8f34-541078970cee@45.131.4.149:80?security=none&type=ws&host=gozargah.validbv7996.ir&path=%2FTelegram%40WangCai2%2F%3Fed%3D2560#
-ss://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.20:80?security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#t.me/MoftConfig
+ss://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.20:80?security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#[]t.me/MoftConfig
 ss://4088e698-69fd-4d15-98bc-f1fe4c071642@45.131.5.254:80?security=none&sni=digitalscientificresearchgroup.ir&type=ws&host=digitalscientificresearchgroup.ir&path=Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560#
 ss://260c4900-69a9-465c-8c3a-272eb1b4ec00@45.131.6.6:8080?security=none&sni=ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev&type=ws&host=ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev&path=Telegram%40WangCai2%2F%3Fed#
 ss://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.231:80/?type=ws&encryption=none&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#%40Hope_Net-join-us-on-Telegram
@@ -840,7 +840,7 @@ vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@45.131.208.168:2096?security=tls&sn
 vless://b5441b0d-2147-4898-8a6a-9b2c87f58382@102.177.189.3:8880?sni=Telegram-channel-WangCai2&type=ws&host=bitget1.asdasd.click&path=/Telegram
 vless://89b3cbba-e6ac-485a-9481-976a0415eab9@45.131.5.226:80?security=&type=ws&host=uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz&encryption=none#
 vless://c5293efa-28f8-4a0f-8f34-541078970cee@45.131.4.149:80?security=none&type=ws&host=gozargah.validbv7996.ir&path=%2FTelegram%40WangCai2%2F%3Fed%3D2560#
-vless://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.20:80?security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#t.me/MoftConfig
+vless://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.20:80?security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#[]t.me/MoftConfig
 vless://4088e698-69fd-4d15-98bc-f1fe4c071642@45.131.5.254:80?security=none&sni=digitalscientificresearchgroup.ir&type=ws&host=digitalscientificresearchgroup.ir&path=Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%2F%3Fed%3D2560#
 vless://260c4900-69a9-465c-8c3a-272eb1b4ec00@45.131.6.6:8080?security=none&sni=ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev&type=ws&host=ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev&path=Telegram%40WangCai2%2F%3Fed#
 vless://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.231:80/?type=ws&encryption=none&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#%40Hope_Net-join-us-on-Telegram
@@ -880,7 +880,7 @@ ss://YWVzLTEyOC1nY206OTM0OTg1MzktNzgzOC00ODM2LWI5YjMtODMxMWZmYzc5YmNm@82.180.146
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5NGR2b1cwVGRLUnE=@161.97.68.139:443#
 ss://YWVzLTI1Ni1jZmI6ZjhmN2FDemNQS2JzRjhwMw==@188.214.36.155:989#
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDVWRZRHE2ZzRlYnFqN0NE@74.177.138.134:443#
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXc3R1U25sdTRpZUE5TTBM@131.145.20.27:443#t.me/MoftConfig
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXc3R1U25sdTRpZUE5TTBM@131.145.20.27:443#[]t.me/MoftConfig
 ss://e497da22-d020-40fb-a1fa-bc294066a2d2@45.149.12.232:80/?type=ws&encryption=none&host=pormang.webhost99.workers.dev&path=%2F%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1#
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKQTkzNUFudUNnVWZaaGE2bnFvVlpZ@77.246.98.67:443#%20@MoftConfigThe%20Netherlands
 ss://osVPN_3111052@146.103.105.233:443?security=reality&encryption=none&pbk=Z8A8Q4ZzljW2121vwEHNV6qVMnF9Z_FLULGozMOiGTE&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=whatsapp.com&sid=ffffffffff#%E6%9C%AA%E7%9F%A5%20VLESS-94%20%7C%20free-nodes
