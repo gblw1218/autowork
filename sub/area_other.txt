@@ -2916,7 +2916,7 @@ ss://709c5fb0-aa81-417a-a503-d3139bc4d801@172.67.69.236:2096?security=tls&sni=rE
 ss://fc228061-1144-4817-99f7-ac7401b6ee2b@104.21.61.158:443?security=tls&sni=aaa2.hajalii.com&type=httpupgrade&host=aaa2.hajalii.com&path=%2FYaPmf4AHa9IotdA9NmktIxw&fp=chrome&alpn=http%2F1.1#4FreeIran-21439
 ss://5e1306ff-3ffa-4166-89ab-1a06ff42eca6@172.64.148.115:443?security=tls&sni=www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net&type=ws&host=www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net&path=%2FTelegram-JOKERRVPN_Join_Bade_Channel@JOKERRVPN%3Fed%3D5460#
 ss://6d898085-bf6a-449b-9763-0073d4dc2ce0@172.67.204.75:443?security=tls&sni=boSTOn02.818185.xyZ&type=ws&host=boston02.818185.xyz&path=%2F1wqm4O6ukd1L6R1Jz18eIUw&fp=chrome&alpn=http%2F1.1#
-ss://92b05e77-276a-43c9-ae74-3e1cb7bfd99c@holy-queen-f603.qweqweqwehsaby.workers.dev:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=holy-queen-f603.qweqweqwehsaby.workers.dev&type=ws#]t.me/ConfigsHub
+ss://92b05e77-276a-43c9-ae74-3e1cb7bfd99c@holy-queen-f603.qweqweqwehsaby.workers.dev:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=holy-queen-f603.qweqweqwehsaby.workers.dev&type=ws#t.me/ConfigsHub
 ss://48198295-b7ba-4b5c-8d85-085d55a6c869@173.245.58.68:443?security=tls&sni=ac.ylks.xyz&type=ws&host=ac.ylks.xyz&path=%2F%3Fed%3D2048#%20VL-WS-TLS%20%20NA-173.245.58.68:443
 ss://f0d584bc-342f-4443-ba24-79e4d0e504b1@45.85.119.165:8880?security=none&type=ws&host=late-tooth.granzinhannah.workers.dev&path=%2F%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%3Fed%3D2560#%20VL-WS-NONE%20%20RO-45.85.119.165:8880
 ss://c3f840ae-9b7a-4846-84d7-a7b52f215f0a@104.16.147.32:8443?security=tls&sni=vs.irandownloadi.ir.&type=grpc&serviceName=sepahanvpn&fp=chrome#4FreeIran-17768
@@ -3410,7 +3410,7 @@ ss://fabdd668-900a-443f-bb38-d9df95c53f9d@300232332.webnama.com.tr:1517?type=tcp
 ss://Parsashonam-204@zmaoz.faculty.ucdavis.edu:80?path=%2F%40Parsashonam%3Fed&security=none&encryption=none&host=Parsashonam-DE.ir&type=ws&sni=Parsashonam-DE.ir#
 ss://897a4bec-26b8-11e8-94be-00505695472c@104.18.83.144:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#
 ss://f2a72ad0-d23f-4eed-96cb-7d970b1e784d@194.76.18.40:80?path=%2Fvless%2F&security=none&encryption=none&host=ov-germany1.09vpn.com&type=ws#
-ss://914b24f0-ad36-447a-8807-d6fdff103afb@185.143.235.201:2083?path=%2FBmHlLvr3qZOOinuP%3Fed&security=tls&alpn=http%2F1.1&encryption=none&host=s1.www.getasa.ir&fp=randomized&type=ws&sni=snapp.ir#]t.me/ConfigsHub
+ss://914b24f0-ad36-447a-8807-d6fdff103afb@185.143.235.201:2083?path=%2FBmHlLvr3qZOOinuP%3Fed&security=tls&alpn=http%2F1.1&encryption=none&host=s1.www.getasa.ir&fp=randomized&type=ws&sni=snapp.ir#t.me/ConfigsHub
 ss://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@185.146.173.37:2087?mode=gun&security=tls&encryption=none&type=grpc&sni=50C1iGiMpI.mYsPdMmEtI.cOm#
 ss://d97c0f7a-7976-40d9-a55b-4c52e757f591@32892393.web-manage.com.tr:2172/?type=grpc&encryption=none&serviceName=chessgame&sni=chess.com&fp=chrome&security=reality&pbk=hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I&sid=#%F0%9F%8F%B5%EF%B8%8F35%40oneclickvpnkeys
 ss://7ca28380-8f51-4eaa-89c9-6243bdf7f500@104.24.34.42:2053?sni=www.pjw5.top&type=ws&host=www.pjw5.top#4FreeIran-12960
@@ -3715,7 +3715,7 @@ vless://709c5fb0-aa81-417a-a503-d3139bc4d801@172.67.69.236:2096?security=tls&sni
 vless://fc228061-1144-4817-99f7-ac7401b6ee2b@104.21.61.158:443?security=tls&sni=aaa2.hajalii.com&type=httpupgrade&host=aaa2.hajalii.com&path=%2FYaPmf4AHa9IotdA9NmktIxw&fp=chrome&alpn=http%2F1.1#4FreeIran-21439
 vless://5e1306ff-3ffa-4166-89ab-1a06ff42eca6@172.64.148.115:443?security=tls&sni=www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net&type=ws&host=www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net&path=%2FTelegram-JOKERRVPN_Join_Bade_Channel@JOKERRVPN%3Fed%3D5460#
 vless://6d898085-bf6a-449b-9763-0073d4dc2ce0@172.67.204.75:443?security=tls&sni=boSTOn02.818185.xyZ&type=ws&host=boston02.818185.xyz&path=%2F1wqm4O6ukd1L6R1Jz18eIUw&fp=chrome&alpn=http%2F1.1#
-vless://92b05e77-276a-43c9-ae74-3e1cb7bfd99c@holy-queen-f603.qweqweqwehsaby.workers.dev:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=holy-queen-f603.qweqweqwehsaby.workers.dev&type=ws#]t.me/ConfigsHub
+vless://92b05e77-276a-43c9-ae74-3e1cb7bfd99c@holy-queen-f603.qweqweqwehsaby.workers.dev:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=holy-queen-f603.qweqweqwehsaby.workers.dev&type=ws#t.me/ConfigsHub
 vless://48198295-b7ba-4b5c-8d85-085d55a6c869@173.245.58.68:443?security=tls&sni=ac.ylks.xyz&type=ws&host=ac.ylks.xyz&path=%2F%3Fed%3D2048#%20VL-WS-TLS%20%20NA-173.245.58.68:443
 vless://f0d584bc-342f-4443-ba24-79e4d0e504b1@45.85.119.165:8880?security=none&type=ws&host=late-tooth.granzinhannah.workers.dev&path=%2F%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%3Fed%3D2560#%20VL-WS-NONE%20%20RO-45.85.119.165:8880
 vless://c3f840ae-9b7a-4846-84d7-a7b52f215f0a@104.16.147.32:8443?security=tls&sni=vs.irandownloadi.ir.&type=grpc&serviceName=sepahanvpn&fp=chrome#4FreeIran-17768
@@ -4192,7 +4192,7 @@ vless://fabdd668-900a-443f-bb38-d9df95c53f9d@300232332.webnama.com.tr:1517?type=
 vless://Parsashonam-204@zmaoz.faculty.ucdavis.edu:80?path=%2F%40Parsashonam%3Fed&security=none&encryption=none&host=Parsashonam-DE.ir&type=ws&sni=Parsashonam-DE.ir#
 vless://897a4bec-26b8-11e8-94be-00505695472c@104.18.83.144:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#
 vless://f2a72ad0-d23f-4eed-96cb-7d970b1e784d@194.76.18.40:80?path=%2Fvless%2F&security=none&encryption=none&host=ov-germany1.09vpn.com&type=ws#
-vless://914b24f0-ad36-447a-8807-d6fdff103afb@185.143.235.201:2083?path=%2FBmHlLvr3qZOOinuP%3Fed&security=tls&alpn=http%2F1.1&encryption=none&host=s1.www.getasa.ir&fp=randomized&type=ws&sni=snapp.ir#]t.me/ConfigsHub
+vless://914b24f0-ad36-447a-8807-d6fdff103afb@185.143.235.201:2083?path=%2FBmHlLvr3qZOOinuP%3Fed&security=tls&alpn=http%2F1.1&encryption=none&host=s1.www.getasa.ir&fp=randomized&type=ws&sni=snapp.ir#t.me/ConfigsHub
 vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@185.146.173.37:2087?mode=gun&security=tls&encryption=none&type=grpc&sni=50C1iGiMpI.mYsPdMmEtI.cOm#
 vless://d97c0f7a-7976-40d9-a55b-4c52e757f591@32892393.web-manage.com.tr:2172/?type=grpc&encryption=none&serviceName=chessgame&sni=chess.com&fp=chrome&security=reality&pbk=hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I&sid=#%F0%9F%8F%B5%EF%B8%8F35%40oneclickvpnkeys
 vless://7ca28380-8f51-4eaa-89c9-6243bdf7f500@104.24.34.42:2053?sni=www.pjw5.top&type=ws&host=www.pjw5.top#4FreeIran-12960

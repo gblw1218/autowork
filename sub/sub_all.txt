@@ -6156,7 +6156,7 @@ ss://b5991ab6-76c0-45c5-ab96-886e5430b90a@167.82.31.110:80?type=ws&host=Join-VPN
 ss://fc228061-1144-4817-99f7-ac7401b6ee2b@104.21.61.158:443?security=tls&sni=aaa2.hajalii.com&type=httpupgrade&host=aaa2.hajalii.com&path=%2FYaPmf4AHa9IotdA9NmktIxw&fp=chrome&alpn=http%2F1.1#4FreeIran-21439
 ss://5e1306ff-3ffa-4166-89ab-1a06ff42eca6@172.64.148.115:443?security=tls&sni=www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net&type=ws&host=www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net&path=%2FTelegram-JOKERRVPN_Join_Bade_Channel@JOKERRVPN%3Fed%3D5460#
 ss://6d898085-bf6a-449b-9763-0073d4dc2ce0@172.67.204.75:443?security=tls&sni=boSTOn02.818185.xyZ&type=ws&host=boston02.818185.xyz&path=%2F1wqm4O6ukd1L6R1Jz18eIUw&fp=chrome&alpn=http%2F1.1#
-ss://92b05e77-276a-43c9-ae74-3e1cb7bfd99c@holy-queen-f603.qweqweqwehsaby.workers.dev:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=holy-queen-f603.qweqweqwehsaby.workers.dev&type=ws#]t.me/ConfigsHub
+ss://92b05e77-276a-43c9-ae74-3e1cb7bfd99c@holy-queen-f603.qweqweqwehsaby.workers.dev:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=holy-queen-f603.qweqweqwehsaby.workers.dev&type=ws#t.me/ConfigsHub
 ss://c5293efa-28f8-4a0f-8f34-541078970cee@45.131.5.194:80/?type=ws&encryption=none&host=gozargah.validbv7996.ir&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2#
 ss://c5293efa-28f8-4a0f-8f34-541078970cee@45.131.4.73:80?type=ws&host=gozargah.validbv7996.ir&path=%2FMOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2%3Fed%3D2560#4FreeIran-17864
 ss://48198295-b7ba-4b5c-8d85-085d55a6c869@173.245.58.68:443?security=tls&sni=ac.ylks.xyz&type=ws&host=ac.ylks.xyz&path=%2F%3Fed%3D2048#%20VL-WS-TLS%20%20NA-173.245.58.68:443
@@ -6733,7 +6733,7 @@ ss://cbc043ca-bef6-431b-a182-5ca6446253bb@mech.sharghidustrial.ir:443?path=%2F9G
 ss://d342d11e-d424-4583-b36e-524ab1f0afa4@141.101.120.48:2096?security=tls&sni=1749800520363.wk.by.ktff.ss#
 ss://60630c28-378d-45f3-9917-ee181f12faaf@190.93.245.137:2087?security=tls&sni=WWW.adabefarsi.eu.&type=ws&host=WWW.adabefarsi.eu.&fp=chrome&alpn=h2%2Chttp%2F1.1#
 ss://81936cbd-6f9a-4f53-adf8-b8822e77b461@104.26.1.143:443?security=tls&sni=xxx.66500-280b-471c-b2b8-d68b7f9960012.workers.dev&type=ws&host=xxx.66500-280b-471c-b2b8-d68b7f9960012.workers.dev&path=%2F%3Fed%3D2048&fp=chrome&alpn=h3%2Ch2#
-ss://74049a59-4a76-48bb-9689-efa31e4dad6f@192.243.113.108:443?security=tls&sni=usa.cayuo.me&type=ws&host=usa.cayuo.me&path=%2Fbing&fp=chrome#]t.me/MoftConfig
+ss://74049a59-4a76-48bb-9689-efa31e4dad6f@192.243.113.108:443?security=tls&sni=usa.cayuo.me&type=ws&host=usa.cayuo.me&path=%2Fbing&fp=chrome#t.me/MoftConfig
 ss://0d89a36e-36bc-41d2-8bd3-bbd639991f29@103.116.7.152:2096?security=tls&sni=nicorobin.eula.cloudns.org&type=ws&path=%2F%3Fed%3D2048#%20VL-WS-TLS%20%20US-103.116.7.152:2096
 ss://96a1b724-68d2-4f4d-ab25-38ecd83577bc@45.131.208.79:8443?path=%2F&security=tls&encryption=none&alpn=h3,h2&host=QtRkJtLt27.pRiMeXaD.OrG&fp=chrome&type=ws&sni=QtRkJtLt27.pRiMeXaD.OrG#%E8%8D%B7%E5%85%B0_0628051248
 ss://06e4425e-a8cb-4b63-929f-2105604ab0a9@104.26.12.54:443?sni=hl.ylka.dpdns.org&type=ws&host=hl.ylka.dpdns.org&allowInsecure=1#
@@ -6866,7 +6866,7 @@ ss://Parsashonam-204@zmaoz.faculty.ucdavis.edu:80?path=%2F%40Parsashonam%3Fed&se
 ss://897a4bec-26b8-11e8-94be-00505695472c@104.18.83.144:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#
 ss://f2a72ad0-d23f-4eed-96cb-7d970b1e784d@194.76.18.40:80?path=%2Fvless%2F&security=none&encryption=none&host=ov-germany1.09vpn.com&type=ws#
 ss://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@185.176.24.213:8880?type=ws&host=jp.laoyoutiao.link#4FreeIran-20802
-ss://914b24f0-ad36-447a-8807-d6fdff103afb@185.143.235.201:2083?path=%2FBmHlLvr3qZOOinuP%3Fed&security=tls&alpn=http%2F1.1&encryption=none&host=s1.www.getasa.ir&fp=randomized&type=ws&sni=snapp.ir#]t.me/ConfigsHub
+ss://914b24f0-ad36-447a-8807-d6fdff103afb@185.143.235.201:2083?path=%2FBmHlLvr3qZOOinuP%3Fed&security=tls&alpn=http%2F1.1&encryption=none&host=s1.www.getasa.ir&fp=randomized&type=ws&sni=snapp.ir#t.me/ConfigsHub
 ss://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@185.146.173.37:2087?mode=gun&security=tls&encryption=none&type=grpc&sni=50C1iGiMpI.mYsPdMmEtI.cOm#
 ss://d97c0f7a-7976-40d9-a55b-4c52e757f591@32892393.web-manage.com.tr:2172/?type=grpc&encryption=none&serviceName=chessgame&sni=chess.com&fp=chrome&security=reality&pbk=hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I&sid=#%F0%9F%8F%B5%EF%B8%8F35%40oneclickvpnkeys
 ss://96a1b724-68d2-4f4d-ab25-38ecd83577bc@208.86.168.210:443?type=ws&host=Wv2NhB0hVh.SoLiJoNiTo.CoM&path=/?ed%3D2048-@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn&security=tls&fp=chrome&sni=Wv2NhB0hVh.SoLiJoNiTo.CoM#
@@ -6922,7 +6922,7 @@ ss://5b97592b-1e9c-7747-e571-b4291f98c6ab@46.254.93.124:8080?security=none&type=
 ss://c5293efa-28f8-4a0f-8f34-541078970cee@45.131.4.149:80?security=none&type=ws&host=gozargah.validbv7996.ir&path=%2FTelegram%40WangCai2%2F%3Fed%3D2560#
 ss://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@14.102.229.213:8880?security=none&type=ws&host=jp.laoyoutiao.link#4FreeIran-20395
 ss://4cbb71d8-4262-43af-8b4f-e126b794ff8d@172.66.40.253:443?security=tls&sni=xxx.66500-280b-471c-b2b8-d68b7f9960001.workers.dev&type=ws&host=xxx.66500-280b-471c-b2b8-d68b7f9960001.workers.dev&path=%2F%3Fed%3D2048&fp=chrome&alpn=h3%2Ch2#4FreeIran-10223
-ss://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.20:80?security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#]t.me/MoftConfig
+ss://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.20:80?security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#t.me/MoftConfig
 ss://721a6c8e-809f-404d-91d6-582860af9cc3@142.250.191.78:443/?type=ws&encryption=none&host=gtest-638114869974.europe-west4.run.app&path=%2FrWUMkmNJBTurxq6Hlt8D6ftJ8qP7&security=tls&sni=google.com&alpn=http%2F1.1&fp=chrome#%40Hope_Net-join-us-on-Telegram
 ss://06e4425e-a8cb-4b63-929f-2105604ab0a9@162.159.44.203:443?security=tls&sni=yz.ylka.dpdns.org&type=ws&host=yz.ylka.dpdns.org&path=%2F%3Fed%3D2560#
 ss://897a4bec-26b8-11e8-94be-00505695472c@104.16.43.172:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#
@@ -7031,7 +7031,7 @@ ss://c6e8b852-70a0-45f9-93d8-1f4f9cfbc799@38.180.158.38:443?security=reality&flo
 ss://1af8b2d6-213d-49ce-9bc9-ffbdc5830c35@172.67.162.79:443?security=tls&sni=ARCane-427.Pages.DEV&type=ws&host=arcane-427.pages.dev&path=/api/assets&fp=android&alpn=http/1.1#
 ss://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@141.193.213.26:80?security=none&sni=us.laoyoutiao.link&type=ws&host=us.laoyoutiao.link&path=Telegram%40WangCai2%2F%3Fed#4FreeIran-20484
 ss://908fe4f8-eb66-42eb-bd97-8d88be7f0ac4@172.67.199.26:2053?security=tls&sni=txmt.conetcdata.dpdns.org&type=ws&host=txmt.conetcdata.dpdns.org&path=%2F%3Fed%3D2560&fp=random#4FreeIran-14800
-ss://ZEDMODEON--ZEDMODEON@140.248.181.96:443?path=%2F%40ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%40ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-%40ZEDMODEON%3Fed%3D2048&security=tls&encryption=none&host=melligold.com&type=ws&sni=britishmuseumshoponline.org#]t.me/ConfigsHub
+ss://ZEDMODEON--ZEDMODEON@140.248.181.96:443?path=%2F%40ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%40ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-%40ZEDMODEON%3Fed%3D2048&security=tls&encryption=none&host=melligold.com&type=ws&sni=britishmuseumshoponline.org#t.me/ConfigsHub
 ss://659c3dce-ca8b-4bf1-8646-a0b33ee189c1@62.60.250.224:2083/?type=tcp&encryption=none#
 ss://59860b15-b2d9-47f9-9b92-81bd1639fcc5@104.18.121.158:80/?type=ws&encryption=none&host=23-lsjfjwiposkfls.hc2021.cfd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20#
 ss://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@91.193.58.64:8880/?type=ws&encryption=none&flow=&host=us.laoyoutiao.link&path=%2F#
@@ -7303,7 +7303,7 @@ vless://b5991ab6-76c0-45c5-ab96-886e5430b90a@167.82.31.110:80?type=ws&host=Join-
 vless://fc228061-1144-4817-99f7-ac7401b6ee2b@104.21.61.158:443?security=tls&sni=aaa2.hajalii.com&type=httpupgrade&host=aaa2.hajalii.com&path=%2FYaPmf4AHa9IotdA9NmktIxw&fp=chrome&alpn=http%2F1.1#4FreeIran-21439
 vless://5e1306ff-3ffa-4166-89ab-1a06ff42eca6@172.64.148.115:443?security=tls&sni=www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net&type=ws&host=www.speedtest.net.www.google.com.bing.com.visa.com.tls.htr.ddns-ip.net&path=%2FTelegram-JOKERRVPN_Join_Bade_Channel@JOKERRVPN%3Fed%3D5460#
 vless://6d898085-bf6a-449b-9763-0073d4dc2ce0@172.67.204.75:443?security=tls&sni=boSTOn02.818185.xyZ&type=ws&host=boston02.818185.xyz&path=%2F1wqm4O6ukd1L6R1Jz18eIUw&fp=chrome&alpn=http%2F1.1#
-vless://92b05e77-276a-43c9-ae74-3e1cb7bfd99c@holy-queen-f603.qweqweqwehsaby.workers.dev:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=holy-queen-f603.qweqweqwehsaby.workers.dev&type=ws#]t.me/ConfigsHub
+vless://92b05e77-276a-43c9-ae74-3e1cb7bfd99c@holy-queen-f603.qweqweqwehsaby.workers.dev:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=holy-queen-f603.qweqweqwehsaby.workers.dev&type=ws#t.me/ConfigsHub
 vless://c5293efa-28f8-4a0f-8f34-541078970cee@45.131.5.194:80/?type=ws&encryption=none&host=gozargah.validbv7996.ir&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2#
 vless://c5293efa-28f8-4a0f-8f34-541078970cee@45.131.4.73:80?type=ws&host=gozargah.validbv7996.ir&path=%2FMOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2%3Fed%3D2560#4FreeIran-17864
 vless://48198295-b7ba-4b5c-8d85-085d55a6c869@173.245.58.68:443?security=tls&sni=ac.ylks.xyz&type=ws&host=ac.ylks.xyz&path=%2F%3Fed%3D2048#%20VL-WS-TLS%20%20NA-173.245.58.68:443
@@ -7857,7 +7857,7 @@ vless://cbc043ca-bef6-431b-a182-5ca6446253bb@mech.sharghidustrial.ir:443?path=%2
 vless://d342d11e-d424-4583-b36e-524ab1f0afa4@141.101.120.48:2096?security=tls&sni=1749800520363.wk.by.ktff.ss#
 vless://60630c28-378d-45f3-9917-ee181f12faaf@190.93.245.137:2087?security=tls&sni=WWW.adabefarsi.eu.&type=ws&host=WWW.adabefarsi.eu.&fp=chrome&alpn=h2%2Chttp%2F1.1#
 vless://81936cbd-6f9a-4f53-adf8-b8822e77b461@104.26.1.143:443?security=tls&sni=xxx.66500-280b-471c-b2b8-d68b7f9960012.workers.dev&type=ws&host=xxx.66500-280b-471c-b2b8-d68b7f9960012.workers.dev&path=%2F%3Fed%3D2048&fp=chrome&alpn=h3%2Ch2#
-vless://74049a59-4a76-48bb-9689-efa31e4dad6f@192.243.113.108:443?security=tls&sni=usa.cayuo.me&type=ws&host=usa.cayuo.me&path=%2Fbing&fp=chrome#]t.me/MoftConfig
+vless://74049a59-4a76-48bb-9689-efa31e4dad6f@192.243.113.108:443?security=tls&sni=usa.cayuo.me&type=ws&host=usa.cayuo.me&path=%2Fbing&fp=chrome#t.me/MoftConfig
 vless://0d89a36e-36bc-41d2-8bd3-bbd639991f29@103.116.7.152:2096?security=tls&sni=nicorobin.eula.cloudns.org&type=ws&path=%2F%3Fed%3D2048#%20VL-WS-TLS%20%20US-103.116.7.152:2096
 vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@45.131.208.79:8443?path=%2F&security=tls&encryption=none&alpn=h3,h2&host=QtRkJtLt27.pRiMeXaD.OrG&fp=chrome&type=ws&sni=QtRkJtLt27.pRiMeXaD.OrG#%E8%8D%B7%E5%85%B0_0628051248
 vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@104.26.12.54:443?sni=hl.ylka.dpdns.org&type=ws&host=hl.ylka.dpdns.org&allowInsecure=1#
@@ -7987,7 +7987,7 @@ vless://Parsashonam-204@zmaoz.faculty.ucdavis.edu:80?path=%2F%40Parsashonam%3Fed
 vless://897a4bec-26b8-11e8-94be-00505695472c@104.18.83.144:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#
 vless://f2a72ad0-d23f-4eed-96cb-7d970b1e784d@194.76.18.40:80?path=%2Fvless%2F&security=none&encryption=none&host=ov-germany1.09vpn.com&type=ws#
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@185.176.24.213:8880?type=ws&host=jp.laoyoutiao.link#4FreeIran-20802
-vless://914b24f0-ad36-447a-8807-d6fdff103afb@185.143.235.201:2083?path=%2FBmHlLvr3qZOOinuP%3Fed&security=tls&alpn=http%2F1.1&encryption=none&host=s1.www.getasa.ir&fp=randomized&type=ws&sni=snapp.ir#]t.me/ConfigsHub
+vless://914b24f0-ad36-447a-8807-d6fdff103afb@185.143.235.201:2083?path=%2FBmHlLvr3qZOOinuP%3Fed&security=tls&alpn=http%2F1.1&encryption=none&host=s1.www.getasa.ir&fp=randomized&type=ws&sni=snapp.ir#t.me/ConfigsHub
 vless://24a4aa9b-b341-4717-9d4a-00d74c2b84e0@185.146.173.37:2087?mode=gun&security=tls&encryption=none&type=grpc&sni=50C1iGiMpI.mYsPdMmEtI.cOm#
 vless://d97c0f7a-7976-40d9-a55b-4c52e757f591@32892393.web-manage.com.tr:2172/?type=grpc&encryption=none&serviceName=chessgame&sni=chess.com&fp=chrome&security=reality&pbk=hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I&sid=#%F0%9F%8F%B5%EF%B8%8F35%40oneclickvpnkeys
 vless://96a1b724-68d2-4f4d-ab25-38ecd83577bc@208.86.168.210:443?type=ws&host=Wv2NhB0hVh.SoLiJoNiTo.CoM&path=/?ed%3D2048-@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn&security=tls&fp=chrome&sni=Wv2NhB0hVh.SoLiJoNiTo.CoM#
@@ -8041,7 +8041,7 @@ vless://b99590df-eda0-4e34-e1a9-3d1118faed83@103.169.142.61:8880?security=none&t
 vless://5b97592b-1e9c-7747-e571-b4291f98c6ab@46.254.93.124:8080?security=none&type=httpupgrade&host=LondoN-Ar-11.pcsTorearsOft.iR.&path=%2Fegram---AR_ore--tem--ar_sre--egram--AR_st_n--tegram--ar_orE_pn--tgram----aR_tre_pN%3Fed%3D2048#
 vless://c5293efa-28f8-4a0f-8f34-541078970cee@45.131.4.149:80?security=none&type=ws&host=gozargah.validbv7996.ir&path=%2FTelegram%40WangCai2%2F%3Fed%3D2560#
 vless://4cbb71d8-4262-43af-8b4f-e126b794ff8d@172.66.40.253:443?security=tls&sni=xxx.66500-280b-471c-b2b8-d68b7f9960001.workers.dev&type=ws&host=xxx.66500-280b-471c-b2b8-d68b7f9960001.workers.dev&path=%2F%3Fed%3D2048&fp=chrome&alpn=h3%2Ch2#4FreeIran-10223
-vless://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.20:80?security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#]t.me/MoftConfig
+vless://568279ce-dd78-4f33-9e5c-64b18c5505db@151.101.123.20:80?security=none&type=ws&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D2560#t.me/MoftConfig
 vless://721a6c8e-809f-404d-91d6-582860af9cc3@142.250.191.78:443/?type=ws&encryption=none&host=gtest-638114869974.europe-west4.run.app&path=%2FrWUMkmNJBTurxq6Hlt8D6ftJ8qP7&security=tls&sni=google.com&alpn=http%2F1.1&fp=chrome#%40Hope_Net-join-us-on-Telegram
 vless://06e4425e-a8cb-4b63-929f-2105604ab0a9@162.159.44.203:443?security=tls&sni=yz.ylka.dpdns.org&type=ws&host=yz.ylka.dpdns.org&path=%2F%3Fed%3D2560#
 vless://897a4bec-26b8-11e8-94be-00505695472c@104.16.43.172:443?sni=xv6.jpmj.dpdns.org&type=ws&host=xv6.jpmj.dpdns.org&allowInsecure=1#
@@ -8148,7 +8148,7 @@ vless://c6e8b852-70a0-45f9-93d8-1f4f9cfbc799@38.180.158.38:443?security=reality&
 vless://1af8b2d6-213d-49ce-9bc9-ffbdc5830c35@172.67.162.79:443?security=tls&sni=ARCane-427.Pages.DEV&type=ws&host=arcane-427.pages.dev&path=/api/assets&fp=android&alpn=http/1.1#
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@141.193.213.26:80?security=none&sni=us.laoyoutiao.link&type=ws&host=us.laoyoutiao.link&path=Telegram%40WangCai2%2F%3Fed#4FreeIran-20484
 vless://908fe4f8-eb66-42eb-bd97-8d88be7f0ac4@172.67.199.26:2053?security=tls&sni=txmt.conetcdata.dpdns.org&type=ws&host=txmt.conetcdata.dpdns.org&path=%2F%3Fed%3D2560&fp=random#4FreeIran-14800
-vless://ZEDMODEON--ZEDMODEON@140.248.181.96:443?path=%2F%40ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%40ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-%40ZEDMODEON%3Fed%3D2048&security=tls&encryption=none&host=melligold.com&type=ws&sni=britishmuseumshoponline.org#]t.me/ConfigsHub
+vless://ZEDMODEON--ZEDMODEON@140.248.181.96:443?path=%2F%40ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%40ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-%40ZEDMODEON%3Fed%3D2048&security=tls&encryption=none&host=melligold.com&type=ws&sni=britishmuseumshoponline.org#t.me/ConfigsHub
 vless://659c3dce-ca8b-4bf1-8646-a0b33ee189c1@62.60.250.224:2083/?type=tcp&encryption=none#
 vless://59860b15-b2d9-47f9-9b92-81bd1639fcc5@104.18.121.158:80/?type=ws&encryption=none&host=23-lsjfjwiposkfls.hc2021.cfd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20#
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@91.193.58.64:8880/?type=ws&encryption=none&flow=&host=us.laoyoutiao.link&path=%2F#
@@ -8432,7 +8432,7 @@ ss://YWVzLTI1Ni1nY206MUtzc2J1VHliUURCWWdEanU1bk5TZw@82.146.45.100:20#4FreeIran-1
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDVWRZRHE2ZzRlYnFqN0NE@74.177.138.134:443#
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiemxMclJDUkhkWHA0U1NMMHZvSEJT@37.252.10.45:47580#@Nepo_v2ray
 ss://2ce4da59-28c7-41fa-9411-7dfde437c1cb@mainv2-ray.fast.hosting-ip.com:80?path=%2FTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%2CTELEGRAM-%40mainv2-ray%3Fed%3D2048&amp;security=none&amp;encryption=none&amp;host=namehmain.com&amp;type=ws#
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXc3R1U25sdTRpZUE5TTBM@131.145.20.27:443#]t.me/MoftConfig
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXc3R1U25sdTRpZUE5TTBM@131.145.20.27:443#t.me/MoftConfig
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0MHNybWR4cm0zeHlqbnZxejlld2x4YjJteXE3cmp1dg@125.227.86.44:2377#%F0%9F%87%B9%F0%9F%87%BCTW-125.227.86.44-0898
 ss://YWVzLTI1Ni1nY206MUtzc2J1VHliUURCWWdEanU1bk5TZw==@82.146.45.147:20#
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp2WXA2RlRsWlZlekdsc2VvUlJBcHlq@81.19.141.45:443#
@@ -8448,7 +8448,7 @@ ss://YWVzLTI1Ni1jZmI6VE4yWXFnaHhlRkRLWmZMVQ==@217.30.10.18:9037#
 ss://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU@13.212.59.212:443
 ss://31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9@www.zula.ir:2087/?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=Tp813N171b.AnA-sOfT.iR&fp=chrome&type=ws&sni=Tp813N171b.AnA-sOfT.iR#
 ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.30:38388#VN-103.186.154.30-0328
-ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2WVcxaGVtOXVjMnR5TURV@54.213.242.191:443#]t.me/ConfigsHub
+ss://c3M6Ly9ZV1Z6TFRJMU5pMWpabUk2WVcxaGVtOXVjMnR5TURV@54.213.242.191:443#t.me/ConfigsHub
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0RUUzeERpWXVES1BPWWZZZG45dDlOUFBXUVNlaWlkQVc0bHhFT2F2ampvMFdZN2w=@113.30.151.53:31348#
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKQTkzNUFudUNnVWZaaGE2bnFvVlpZ@77.246.98.67:443#%20@MoftConfigThe%20Netherlands
 ss://c142dd91-b36b-430b-b0d7-8c9c2a073a1e@WWW.SPEEDTEST.NET:2086?path=%2FTelegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER-Telegram%3A%40NUFiLTER&amp;security=none&amp;encryption=none&amp;host=uusaa.%E5%88%97%E5%88%97%E7%94%B7%E4%BA%8B%E7%9A%84%E4%BA%8B%E5%88%97%E4%B8%8A%E8%B5%9B%E7%94%B778.shop&amp;type=ws#
