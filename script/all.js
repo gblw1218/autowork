@@ -99,27 +99,13 @@ const filterKeywords = [
     "工单", "中国", "USE", "USED", "TOTAL", "EXPIRE", "EMAIL"
 ];
 
-// 定义保留的关键词及其替换词
-const keywordsMap = {
-    "ChatGPT": "GPT",
-    "t.me": "",
-    "ccbaohe.com": "LW"
-};
+
 
 // 检查是否包含过滤关键词
 if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return false;
 
 // 保留跳过的关键词部分
 let preservedParts = [], newTitle = $server.title;
-
-// 提取并移除跳过的关键词部分
-for (const kw in keywordsMap) {
-    let match = newTitle.match(new RegExp(kw, 'i'));
-    if (match) {
-        preservedParts.push(keywordsMap[kw]);
-        newTitle = newTitle.replace(match[0], '');
-    }
-}
 
 let titleFlag = false;
 let flagIcon = '';
