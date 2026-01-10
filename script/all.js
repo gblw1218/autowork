@@ -1,5 +1,4 @@
 let customCharStart = "序号";
-let customCharEnd = "";
 const filteredTypes = ["trojan", "udp"]; // 要过滤的协议类型
 if (filteredTypes.includes($server.type?.toLowerCase())) {
     return false; 
@@ -105,7 +104,7 @@ const filterKeywords = [
 if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return false;
 
 // 保留跳过的关键词部分
-let preservedParts = [], newTitle = $server.title;
+let  newTitle = $server.title;
 
 let titleFlag = false;
 let flagIcon = '';
@@ -130,10 +129,6 @@ if (!map[newTitle]) {
 } else {
     newTitle = `${flagIcon}${customCharStart}${++map["totalNode"]}${newTitle}-${++map[newTitle]}`;
 }
-
-newTitle += customCharEnd;
-
-if (preservedParts.length) newTitle += ' ' + preservedParts.join(' ');
 
 $server.title = newTitle;
 return true;
