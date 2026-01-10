@@ -80,7 +80,11 @@ for (const keyword in keywordsToNames) {
     }
 }
 
-if (!titleFlag) return false;
+if (!titleFlag) {
+    newTitle = "🇺🇳其他未知";
+    flagIcon = "🏳️‍🌈";
+}
+
 
 const map = globalThis.map || (globalThis.map = {});
 if(!map["totalNode"]){

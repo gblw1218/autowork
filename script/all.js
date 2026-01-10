@@ -9,23 +9,23 @@ const keywordsToNames = {
 "新加坡|狮城|SG|Singapore": {area:"🇸🇬新加坡",flag:"🚀"},
 "日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
 "韩国|首尔|釜山|KR|Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
-"澳|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": {area:"🇦🇺澳大利亚",flag:"🚀"},
+"澳大利亚|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": {area:"🇦🇺澳大利亚",flag:"🚀"},
 "美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago":  {area:"🇺🇸美国",flag:"🚀"},
 "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal":  {area:"🇨🇦加拿大",flag:"🚀"},
+"法国|巴黎|里昂|马赛|FR|France|Paris|Lyon|Marseille":  {area:"🇫🇷法国",flag:"🚀"},
+"德国|柏林|慕尼黑|汉堡|汉诺威|杜塞尔多夫|法兰克福|Dusseldorf|Frankfurt|Germany|DE|Berlin|Munich|Hamburg|Hanover|Dusseldorf|Frankfurt":{area:"🇩🇪德国",flag:"🚀"},
+"英国|伦敦|曼彻斯特|伯明翰|GB|UK|United Kingdom|London|Manchester|Birmingham":  {area:"🇬🇧英国",flag:"🚀"},
 "阿联酋|迪拜|阿布扎比|AE|UAE|Dubai|Abu Dhabi":  {area:"🇦🇪阿联酋",flag:"🚀"},
 "以色列|Israel|IL|Jerusalem|Tel Aviv|Haifa":  {area:"🇮🇱以色列",flag:"🚀"},
-"丹麦|Denmark|DK|Copenhagen|Aarhus|Odense":  {area:"🇩🇰丹麦",flag:"🚀"},
-"挪威|奥斯陆|NO|Norway|Oslo":  {area:"🇳🇴挪威",flag:"🚀"},
 "芬兰|赫尔辛基|FI|Finland|Helsinki":  {area:"🇫🇮芬兰",flag:"🚀"},
-"卡塔尔|多哈|QA|Qatar|Doha":  {area:"🇶🇦卡塔尔",flag:"🚀"},
-"卢森堡|Luxembourg|LU|Luxembourg City":  {area:"🇱🇺卢森堡",flag:"🚀"},
 "爱沙尼亚|Estonia|EE|Tallinn":  {area:"🇪🇪爱沙尼亚",flag:"🚀"},
-"法国|巴黎|里昂|马赛|FR|France|Paris|Lyon|Marseille":  {area:"🇫🇷法国",flag:"🔥"},
+"卡塔尔|多哈|QA|Qatar|Doha":  {area:"🇶🇦卡塔尔",flag:"🔥"},
+"丹麦|Denmark|DK|Copenhagen|Aarhus|Odense":  {area:"🇩🇰丹麦",flag:"🔥"},
+"卢森堡|Luxembourg|LU|Luxembourg City":  {area:"🇱🇺卢森堡",flag:"🔥"},
+"挪威|奥斯陆|NO|Norway|Oslo":  {area:"🇳🇴挪威",flag:"🔥"},
 "智利|圣地亚哥|CL|Chile|Santiago": {area:"🇨🇱智利",flag:"🔥"},
 "爱尔兰|都柏林|IE|Ireland|Dublin": {area:"🇮🇪爱尔兰",flag:"🔥"},
 "冰岛|雷克雅未克|IS|Iceland|Reykjavik": {area:"🇮🇸冰岛",flag:"🔥"},
-"德国|法兰克福|柏林|慕尼黑|DE|Germany|Frankfurt|Berlin|Munich":  {area:"🇩🇪德国",flag:"🔥"},
-"英国|伦敦|曼彻斯特|伯明翰|GB|UK|United Kingdom|London|Manchester|Birmingham":  {area:"🇬🇧英国",flag:"🔥"},
 "意大利|罗马|米兰|那不勒斯|IT|Italy|Rome|Milan|Naples":  {area:"🇮🇹意大利",flag:"🔥"},
 "荷兰|阿姆斯特丹|鹿特丹|NL|Netherlands|Amsterdam|Rotterdam":{area:"🇳🇱荷兰",flag:"🔥"},
 "瑞士|苏黎世|日内瓦|CH|Switzerland|Zurich|Geneva": {area:"🇨🇭瑞士",flag:"🔥"},
@@ -61,7 +61,6 @@ const keywordsToNames = {
 "尼泊尔|加德满都|NP|Nepal|Kathmandu":{area:"🇳🇵尼泊尔",flag:"💎"},
 "葡萄牙|里斯本|PT|Portugal|Lisbon": {area:"🇵🇹葡萄牙",flag:"💎"},
 "巴基斯坦|伊斯兰堡|PK|Pakistan|Islamabad":  {area:"🇵🇰巴基斯坦",flag:"💎"},
-"伊朗|德黑兰|IR|Iran|Tehran":  {area:"🇮🇷伊朗",flag:"💎"},
 "伊拉克|巴格达|IQ|Iraq|Baghdad":  {area:"🇮🇶伊拉克",flag:"💎"},
 "阿尔及利亚|阿尔及尔|DZ|Algeria|Algiers":  {area:"🇩🇿阿尔及利亚",flag:"💎"},
 "摩洛哥|拉巴特|MA|Morocco|Rabat": {area:"🇲🇦摩洛哥",flag:"💎"},
@@ -117,7 +116,10 @@ for (const keyword in keywordsToNames) {
     }
 }
 
-if (!titleFlag) return false;
+if (!titleFlag) {
+    newTitle = "🇺🇳其他未知";
+    flagIcon = "🏳️‍🌈";
+}
 
 const map = globalThis.map || (globalThis.map = {});
 if(!map["totalNode"]){
