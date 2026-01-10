@@ -5,15 +5,15 @@ if (filteredTypes.includes($server.type?.toLowerCase())) {
 }
 
 const keywordsToNames = {
-"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao":  {area:"🇭🇰港澳台",flag:"🚀"},
+"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|HKSAR|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳台",flag:"🚀"},
 "新加坡|狮城|SG|Singapore": {area:"🇸🇬新加坡",flag:"🚀"},
-"日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
-"韩国|首尔|釜山|KR|Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
-"澳大利亚|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": {area:"🇦🇺澳大利亚",flag:"🚀"},
-"美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago":  {area:"🇺🇸美国",flag:"🚀"},
+"日|日本|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
+"韩国|首尔|釜山|KR|Korea|South Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
+"澳大利亚|澳洲|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": {area:"🇦🇺澳大利亚",flag:"🚀"},
+"美国|美國|US|USA|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago":  {area:"🇺🇸美国",flag:"🚀"},
 "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal":  {area:"🇨🇦加拿大",flag:"🚀"},
 "法国|巴黎|里昂|马赛|FR|France|Paris|Lyon|Marseille":  {area:"🇫🇷法国",flag:"🚀"},
-"德国|柏林|慕尼黑|汉堡|汉诺威|杜塞尔多夫|法兰克福|Dusseldorf|Frankfurt|Germany|DE|Berlin|Munich|Hamburg|Hanover|Dusseldorf|Frankfurt":{area:"🇩🇪德国",flag:"🚀"},
+"德国|柏林|慕尼黑|汉堡|汉诺威|杜塞尔多夫|法兰克福|Dusseldorf|Frankfurt|Germany|DE|Berlin|Munich|Hamburg|Hanover":{area:"🇩🇪德国",flag:"🚀"},
 "英国|伦敦|曼彻斯特|伯明翰|GB|UK|United Kingdom|London|Manchester|Birmingham":  {area:"🇬🇧英国",flag:"🚀"},
 "阿联酋|迪拜|阿布扎比|AE|UAE|Dubai|Abu Dhabi":  {area:"🇦🇪阿联酋",flag:"🚀"},
 "以色列|Israel|IL|Jerusalem|Tel Aviv|Haifa":  {area:"🇮🇱以色列",flag:"🚀"},
@@ -38,7 +38,7 @@ const keywordsToNames = {
 "新西兰|奥克兰|NZ|New Zealand|Auckland": {area:"🇳🇿新西兰",flag:"🔥"},
 "瑞典|斯德哥尔摩|哥德堡|SE|Sweden|Stockholm|Gothenburg":  {area:"🇸🇪瑞典",flag:"🔥"},
 "沙特|利雅得|吉达|SA|Saudi Arabia|Riyadh|Jeddah":  {area:"🇸🇦沙特",flag:"🔥"},
-"印度尼西亚|雅加达|ID|Indonesia|Jakarta":  {area:"🇮🇩印尼",flag:"🔥"},
+"印度尼西亚|雅加达|ID|Indonesia|Jakarta|印尼":  {area:"🇮🇩印尼",flag:"🔥"},
 "斯洛文尼亚|Slovenia|SI|Ljubljana": {area:"🇸🇮斯洛文尼亚",flag:"🔥"},
 "拉脱维亚|Latvia|LV|Riga":  {area:"🇱🇻拉脱维亚",flag:"🔥"},
 "克罗地亚|Croatia|HR|Zagreb": {area:"🇭🇷克罗地亚",flag:"🔥"},
@@ -81,9 +81,19 @@ const keywordsToNames = {
 "加纳|阿克拉|GH|Ghana|Accra": {area:"🇬🇭加纳",flag:"💎"},
 "肯尼亚|内罗毕|KE|Kenya|Nairobi": {area:"🇰🇪肯尼亚",flag:"💎"},
 "斯里兰卡|科伦坡|LK|Sri Lanka|Colombo": {area:"🇱🇰斯里兰卡",flag:"💎"},
-"孟加拉国|达卡|BD|Bangladesh|Dhaka":  {area:"🇧🇩孟加拉国",flag:"💎"}
-
+"孟加拉国|达卡|BD|Bangladesh|Dhaka":  {area:"🇧🇩孟加拉国",flag:"💎"},
+"柬埔寨|金边|KH|Cambodia|Phnom Penh": {area:"🇰🇭柬埔寨",flag:"💎"},
+"老挝|万象|LA|Laos|Vientiane": {area:"🇱🇦老挝",flag:"💎"},
+"缅甸|内比都|仰光|MM|Myanmar|Burma|Naypyidaw|Yangon": {area:"🇲🇲缅甸",flag:"💎"},
+"哈萨克斯坦|阿斯塔纳|阿拉木图|KZ|Kazakhstan|Astana|Almaty": {area:"🇰🇿哈萨克斯坦",flag:"🔥"},
+"乌兹别克斯坦|塔什干|UZ|Uzbekistan|Tashkent": {area:"🇺🇿乌兹别克斯坦",flag:"💎"},
+"格鲁吉亚|第比利斯|GE|Georgia|Tbilisi": {area:"🇬🇪格鲁吉亚",flag:"💎"},
+"保加利亚|索非亚|BG|Bulgaria|Sofia": {area:"🇧🇬保加利亚",flag:"💎"},
+"斯洛伐克|布拉提斯拉瓦|SK|Slovakia|Bratislava": {area:"🇸🇰斯洛伐克",flag:"💎"},
+"巴拿马|Panama|PA|Panama City": {area:"🇵🇦巴拿马",flag:"💎"},
+"埃塞俄比亚|亚的斯亚贝巴|ET|Ethiopia|Addis Ababa": {area:"🇪🇹埃塞俄比亚",flag:"💎"}
 };
+
 
 // 过滤关键词，防止无效或广告节点
 const filterKeywords = [
