@@ -117,7 +117,7 @@ for (const keyword in keywordsToNames) {
 }
 
 if (!titleFlag) {
-    newTitle = "🇺🇳其他未知";
+    newTitle = "🇺🇳自识别";
     flagIcon = "🏳️‍🌈";
 }
 
