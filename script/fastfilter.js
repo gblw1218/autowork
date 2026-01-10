@@ -5,15 +5,15 @@ if (filteredTypes.includes($server.type?.toLowerCase())) {
 }
 
 const keywordsToNames = {
-"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao":  {area:"🇭🇰港澳台",flag:"🚀"},
+"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|HKSAR|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳台",flag:"🚀"},
 "新加坡|狮城|SG|Singapore": {area:"🇸🇬新加坡",flag:"🚀"},
-"日|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
-"韩国|首尔|釜山|KR|Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
-"澳大利亚|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": {area:"🇦🇺澳大利亚",flag:"🚀"},
-"美国|美國|US|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago":  {area:"🇺🇸美国",flag:"🚀"},
+"日|日本|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
+"韩国|首尔|釜山|KR|Korea|South Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
+"澳大利亚|澳洲|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": {area:"🇦🇺澳大利亚",flag:"🚀"},
+"美国|美國|US|USA|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago":  {area:"🇺🇸美国",flag:"🚀"},
 "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal":  {area:"🇨🇦加拿大",flag:"🚀"},
 "法国|巴黎|里昂|马赛|FR|France|Paris|Lyon|Marseille":  {area:"🇫🇷法国",flag:"🚀"},
-"德国|柏林|慕尼黑|汉堡|汉诺威|杜塞尔多夫|法兰克福|Dusseldorf|Frankfurt|Germany|DE|Berlin|Munich|Hamburg|Hanover|Dusseldorf|Frankfurt":{area:"🇩🇪德国",flag:"🚀"},
+"德国|柏林|慕尼黑|汉堡|汉诺威|杜塞尔多夫|法兰克福|Dusseldorf|Frankfurt|Germany|DE|Berlin|Munich|Hamburg|Hanover":{area:"🇩🇪德国",flag:"🚀"},
 "英国|伦敦|曼彻斯特|伯明翰|GB|UK|United Kingdom|London|Manchester|Birmingham":  {area:"🇬🇧英国",flag:"🚀"},
 "阿联酋|迪拜|阿布扎比|AE|UAE|Dubai|Abu Dhabi":  {area:"🇦🇪阿联酋",flag:"🚀"},
 "以色列|Israel|IL|Jerusalem|Tel Aviv|Haifa":  {area:"🇮🇱以色列",flag:"🚀"},
@@ -38,7 +38,7 @@ const keywordsToNames = {
 "新西兰|奥克兰|NZ|New Zealand|Auckland": {area:"🇳🇿新西兰",flag:"🔥"},
 "瑞典|斯德哥尔摩|哥德堡|SE|Sweden|Stockholm|Gothenburg":  {area:"🇸🇪瑞典",flag:"🔥"},
 "沙特|利雅得|吉达|SA|Saudi Arabia|Riyadh|Jeddah":  {area:"🇸🇦沙特",flag:"🔥"},
-"印度尼西亚|雅加达|ID|Indonesia|Jakarta":  {area:"🇮🇩印尼",flag:"🔥"},
+"印度尼西亚|雅加达|ID|Indonesia|Jakarta|印尼":  {area:"🇮🇩印尼",flag:"🔥"},
 "斯洛文尼亚|Slovenia|SI|Ljubljana": {area:"🇸🇮斯洛文尼亚",flag:"🔥"},
 "拉脱维亚|Latvia|LV|Riga":  {area:"🇱🇻拉脱维亚",flag:"🔥"},
 "克罗地亚|Croatia|HR|Zagreb": {area:"🇭🇷克罗地亚",flag:"🔥"},
@@ -47,7 +47,8 @@ const keywordsToNames = {
 "越南|河内|胡志明|VN|Vietnam|Hanoi|Ho Chi Minh": {area:"🇻🇳越南",flag:"🔥"},
 "尼日利亚|拉各斯|NG|Nigeria|Lagos":  {area:"🇳🇬尼日利亚",flag:"🔥"},
 "菲律宾|马尼拉|PH|Philippines|Manila":  {area:"🇵🇭菲律宾",flag:"🔥"},
-"南非|约翰内斯堡|开普敦|ZA|South Africa|Johannesburg|Cape Town": {area:"🇿🇦南非",flag:"🔥"}
+"南非|约翰内斯堡|开普敦|ZA|South Africa|Johannesburg|Cape Town": {area:"🇿🇦南非",flag:"🔥"},
+"波兰|华沙|克拉科夫|PL|Poland|Warsaw|Krakow": {area:"🇵🇱波兰",flag:"🔥"}
 };
 
 // 过滤关键词，防止无效或广告节点
