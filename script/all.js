@@ -94,6 +94,8 @@ const keywordsToNames = {
 "埃塞俄比亚|亚的斯亚贝巴|ET|Ethiopia|Addis Ababa": {area:"🇪🇹埃塞俄比亚",flag:"💎"}
 };
 
+const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas";
+
 
 // 过滤关键词，防止无效或广告节点
 const filterKeywords = [
@@ -114,7 +116,9 @@ if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return f
 
 // 保留跳过的关键词部分
 let  newTitle = $server.title;
-
+if(new RegExp(filterArea, 'i').test(newTitle)){
+    return false;
+}
 let titleFlag = false;
 let flagIcon = '';
 for (const keyword in keywordsToNames) {
