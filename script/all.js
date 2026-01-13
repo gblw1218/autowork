@@ -85,7 +85,7 @@ const keywordsToNames = {
 "柬埔寨|金边|KH|Cambodia|Phnom Penh": {area:"🇰🇭柬埔寨",flag:"💎"},
 "老挝|万象|LA|Laos|Vientiane": {area:"🇱🇦老挝",flag:"💎"},
 "缅甸|内比都|仰光|MM|Myanmar|Burma|Naypyidaw|Yangon": {area:"🇲🇲缅甸",flag:"💎"},
-"哈萨克斯坦|阿斯塔纳|阿拉木图|KZ|Kazakhstan|Astana|Almaty": {area:"🇰🇿哈萨克斯坦",flag:"🔥"},
+"哈萨克斯坦|阿斯塔纳|阿拉木图|KZ|Kazakhstan|Astana|Almaty": {area:"🇰🇿哈萨克斯坦",flag:"💎"},
 "乌兹别克斯坦|塔什干|UZ|Uzbekistan|Tashkent": {area:"🇺🇿乌兹别克斯坦",flag:"💎"},
 "格鲁吉亚|第比利斯|GE|Georgia|Tbilisi": {area:"🇬🇪格鲁吉亚",flag:"💎"},
 "保加利亚|索非亚|BG|Bulgaria|Sofia": {area:"🇧🇬保加利亚",flag:"💎"},
@@ -94,7 +94,7 @@ const keywordsToNames = {
 "埃塞俄比亚|亚的斯亚贝巴|ET|Ethiopia|Addis Ababa": {area:"🇪🇹埃塞俄比亚",flag:"💎"}
 };
 
-const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas";
+const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas|塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca|危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango";
 
 
 // 过滤关键词，防止无效或广告节点
