@@ -4,6 +4,27 @@ if (filteredTypes.includes($server.type?.toLowerCase())) {
     return false;
 }
 
+const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas|塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca|危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango|孟加拉国|达卡|BD|Bangladesh|Dhaka";
+
+// 检查是否包含过滤地区
+if (filterArea.some(kw => new RegExp(kw, 'i').test($server.title))) return false;
+
+
+// 过滤关键词，防止无效或广告节点
+const filterKeywords = [
+    "广告", "过期", "无效", "测试", "备用", "账号", "有效期",
+    "到期", "刷新", "剩余", "会员", "流量", "超时",
+    "佣金", "免翻", "下载", "更新", "点外", "重置",
+    "Days", "Date", "Expire", "Premium", "建议",
+    "套餐", "到期", "有效", "剩余", "版本", "已用", "过期", "失联",
+    "测试", "备用", "TEST", "客服", "网站",
+    "获取", "流量", "下次", "官址", "联系", "邮箱","127.0.0.1",
+    "工单",  "USE", "USED", "TOTAL", "EXPIRE", "EMAIL"
+];
+
+// 检查是否包含过滤关键词
+if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return false;
+
 const keywordsToNames = {
 "港|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳",flag:"🚀"},
 "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung":  {area:"🇹🇼台湾",flag:"🚀"},
@@ -52,25 +73,9 @@ const keywordsToNames = {
 "波兰|华沙|克拉科夫|PL|Poland|Warsaw|Krakow": {area:"🇵🇱波兰",flag:"🔥"}
 };
 
-// 过滤关键词，防止无效或广告节点
-const filterKeywords = [
-    "广告", "过期", "无效", "测试", "备用", "账号", "有效期",
-    "到期", "刷新", "剩余", "会员", "流量", "超时",
-    "佣金", "免翻", "下载", "更新", "点外", "重置",
-    "Days", "Date", "Expire", "Premium", "建议",
-    "套餐", "到期", "有效", "剩余", "版本", "已用", "过期", "失联",
-    "测试", "备用", "TEST", "客服", "网站",
-    "获取", "流量", "下次", "官址", "联系", "邮箱", "127.0.0.1",
-    "工单",  "USE", "USED", "TOTAL", "EXPIRE", "EMAIL"
-];
 
-
-
-// 检查是否包含过滤关键词
-if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return false;
 
 let newTitle = $server.title;
-
 let titleFlag = false;
 let flagIcon = '';
 for (const keyword in keywordsToNames) {
