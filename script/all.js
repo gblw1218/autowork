@@ -22,6 +22,8 @@ if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return f
 
 //区域映射
 const keywordsToNames = {
+"亚洲":  {area:"🇭🇰亚洲",flag:"🚀"},
+"欧美":  {area:"🇺🇸欧美",flag:"🌃"},
 "港|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳",flag:"🚀"},
 "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung":  {area:"🇹🇼台湾",flag:"🚀"},
 "新加坡|狮城|SG|Singapore": {area:"🇸🇬新加坡",flag:"🚀"},
