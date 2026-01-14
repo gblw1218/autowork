@@ -5,7 +5,8 @@ if (filteredTypes.includes($server.type?.toLowerCase())) {
 }
 
 const keywordsToNames = {
-"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|HKSAR|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳台",flag:"🚀"},
+"港|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳",flag:"🚀"},
+"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung":  {area:"🇹🇼台湾",flag:"🚀"},
 "新加坡|狮城|SG|Singapore": {area:"🇸🇬新加坡",flag:"🚀"},
 "日|日本|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
 "韩国|首尔|釜山|KR|Korea|South Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
@@ -81,7 +82,6 @@ const keywordsToNames = {
 "加纳|阿克拉|GH|Ghana|Accra": {area:"🇬🇭加纳",flag:"💎"},
 "肯尼亚|内罗毕|KE|Kenya|Nairobi": {area:"🇰🇪肯尼亚",flag:"💎"},
 "斯里兰卡|科伦坡|LK|Sri Lanka|Colombo": {area:"🇱🇰斯里兰卡",flag:"💎"},
-"孟加拉国|达卡|BD|Bangladesh|Dhaka":  {area:"🇧🇩孟加拉国",flag:"💎"},
 "柬埔寨|金边|KH|Cambodia|Phnom Penh": {area:"🇰🇭柬埔寨",flag:"💎"},
 "老挝|万象|LA|Laos|Vientiane": {area:"🇱🇦老挝",flag:"💎"},
 "缅甸|内比都|仰光|MM|Myanmar|Burma|Naypyidaw|Yangon": {area:"🇲🇲缅甸",flag:"💎"},
@@ -94,7 +94,7 @@ const keywordsToNames = {
 "埃塞俄比亚|亚的斯亚贝巴|ET|Ethiopia|Addis Ababa": {area:"🇪🇹埃塞俄比亚",flag:"💎"}
 };
 
-const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas|塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca|危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango";
+const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas|塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca|危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango|孟加拉国|达卡|BD|Bangladesh|Dhaka";
 
 
 // 过滤关键词，防止无效或广告节点

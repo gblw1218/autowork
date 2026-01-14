@@ -1,11 +1,12 @@
 let customCharStart = "序号";
-const filteredTypes = ["trojan", "udp"]; // 要过滤的协议类型
+const filteredTypes = ["trojan"]; // 要过滤的协议类型
 if (filteredTypes.includes($server.type?.toLowerCase())) {
     return false;
 }
 
 const keywordsToNames = {
-"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|HKSAR|港|香港|HK|Hong Kong|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳台",flag:"🚀"},
+"港|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳",flag:"🚀"},
+"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung":  {area:"🇹🇼台湾",flag:"🚀"},
 "新加坡|狮城|SG|Singapore": {area:"🇸🇬新加坡",flag:"🚀"},
 "日|日本|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
 "韩国|首尔|釜山|KR|Korea|South Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
