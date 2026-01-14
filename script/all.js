@@ -22,14 +22,14 @@ if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return f
 
 //区域映射
 const keywordsToNames = {
-"港|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳",flag:"🚀"},
+"港|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau|亚洲":  {area:"🇭🇰港澳",flag:"🚀"},
 "台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung":  {area:"🇹🇼台湾",flag:"🚀"},
 "新加坡|狮城|SG|Singapore": {area:"🇸🇬新加坡",flag:"🚀"},
 "日|日本|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
 "韩国|首尔|釜山|KR|Korea|South Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
 "泰国|曼谷|清迈|TH|Thailand|Bangkok|Chiang Mai": {area:"🇹🇭泰国",flag:"🚀"},
 "越南|河内|胡志明|VN|Vietnam|Hanoi|Ho Chi Minh": {area:"🇻🇳越南",flag:"🚀"},
-"澳大利亚|澳洲|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane": {area:"🇦🇺澳大利亚",flag:"🌃"},
+"澳大利亚|澳洲|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane|欧美": {area:"🇦🇺澳大利亚",flag:"🌃"},
 "美国|美國|US|USA|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago":  {area:"🇺🇸美国",flag:"🌃"},
 "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal":  {area:"🇨🇦加拿大",flag:"🌃"},
 "法国|巴黎|里昂|马赛|FR|France|Paris|Lyon|Marseille":  {area:"🇫🇷法国",flag:"🌃"},
