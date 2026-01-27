@@ -24,8 +24,7 @@ const filterKeywords = [
 if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return false;
 
 const keywordsToNames = {
-"港|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau":  {area:"🇭🇰港澳",flag:"🚀"},
-"台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung":  {area:"🇹🇼台湾",flag:"🚀"},
+"港|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau|台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|亚洲":  {area:"🇭🇰港澳台",flag:"🚀"},
 "新加坡|狮城|SG|Singapore": {area:"🇸🇬新加坡",flag:"🚀"},
 "日|日本|东京|大阪|名古屋|JP|Tokyo|Japan|Osaka|Nagoya":{area:"🇯🇵日本",flag:"🚀"},
 "韩国|首尔|釜山|KR|Korea|South Korea|Seoul|Busan":{area:"🇰🇷韩国",flag:"🚀"},
