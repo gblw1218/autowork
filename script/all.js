@@ -3,7 +3,7 @@ const filteredTypes = ["trojan"]; // 要过滤的协议类型
 if (filteredTypes.includes($server.type?.toLowerCase())) {
     return false; 
 }
-const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas|塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca|危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango|孟加拉国|达卡|BD|Bangladesh|Dhaka";
+const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas|塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca|危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango|孟加拉国|达卡|BD|Bangladesh|Dhaka|俄罗斯|俄羅斯|Russia|RU";
 if (new RegExp(filterArea, 'i').test($server.title)) return false;
 
 // 过滤关键词，防止无效或广告节点
@@ -30,6 +30,7 @@ const keywordsToNames = {
 "以色列|Israel|IL|耶路撒冷|Jerusalem|特拉维夫|Tel Aviv":  {area:"🇮🇱以色列",flag:"🚀"},
 "卡塔尔|卡達|Qatar|QA|多哈|Doha":  {area:"🇶🇦卡塔尔",flag:"🚀"},
 "荷兰|阿姆斯特丹|鹿特丹|NL|Netherlands|Amsterdam|Rotterdam":{area:"🇳🇱荷兰",flag:"🚀"},
+"卢森堡|Luxembourg|LU|Luxembourg City":  {area:"🇱🇺卢森堡",flag:"🚀"},
 "澳大利亚|澳洲|悉尼|墨尔本|布里斯班|AU|Australia|Sydney|Melbourne|Brisbane|欧美": {area:"🇦🇺澳大利亚",flag:"🌃"},
 "美国|美國|US|USA|洛杉矶|洛杉磯|西雅图|纽约|芝加哥|Atlanta|States|American|Los Angeles|Seattle|New York|Chicago":  {area:"🇺🇸美国",flag:"🌃"},
 "加拿大|多伦多|温哥华|蒙特利尔|CA|Canada|Toronto|Vancouver|Montreal":  {area:"🇨🇦加拿大",flag:"🌃"},
@@ -43,7 +44,6 @@ const keywordsToNames = {
 "越南|河内|胡志明|VN|Vietnam|Hanoi|Ho Chi Minh": {area:"🇻🇳越南",flag:"🌃"},
 "冰岛|雷克雅未克|IS|Iceland|Reykjavik": {area:"🇮🇸冰岛",flag:"🌃"},
 "丹麦|Denmark|DK|Copenhagen|Aarhus|Odense":  {area:"🇩🇰丹麦",flag:"🔥"},
-"卢森堡|Luxembourg|LU|Luxembourg City":  {area:"🇱🇺卢森堡",flag:"🔥"},
 "挪威|奥斯陆|NO|Norway|Oslo":  {area:"🇳🇴挪威",flag:"🔥"},
 "智利|圣地亚哥|CL|Chile|Santiago": {area:"🇨🇱智利",flag:"🔥"},
 "爱尔兰|都柏林|IE|Ireland|Dublin": {area:"🇮🇪爱尔兰",flag:"🔥"},
