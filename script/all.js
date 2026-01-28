@@ -49,7 +49,6 @@ const keywordsToNames = {
 "爱尔兰|都柏林|IE|Ireland|Dublin": {area:"🇮🇪爱尔兰",flag:"🔥"},
 "意大利|罗马|米兰|那不勒斯|IT|Italy|Rome|Milan|Naples":  {area:"🇮🇹意大利",flag:"🔥"},
 "印度|孟买|德里|班加罗尔|IN|India|Mumbai|Delhi|Bangalore": {area:"🇮🇳印度",flag:"🔥"},
-"俄罗斯|莫斯科|圣彼得堡|RU|Russia|Moscow|Saint Petersburg": {area:"🇷🇺俄罗斯",flag:"🔥"},
 "马来西亚|吉隆坡|槟城|MY|Malaysia|Kuala Lumpur|Penang": {area:"🇲🇾马来西亚",flag:"🔥"},
 "比利时|Belgium|BE|Brussels|Antwerp|Ghent":  {area:"🇧🇪比利时",flag:"🔥"},
 "奥地利|维也纳|AT|Austria|Vienna": {area:"🇦🇹奥地利",flag:"🔥"},
@@ -110,33 +109,23 @@ const keywordsToNames = {
 };
 
 
+let newTitle = $server.title;
+let matched = false;
+const map = globalThis.map || (globalThis.map = {total: 0});
 
-let  newTitle = $server.title;
-let titleFlag = false;
-let flagIcon = '';
-for (const keyword in keywordsToNames) {
-    if (new RegExp(keyword, 'i').test(newTitle)) {
-        newTitle = keywordsToNames[keyword].area;
-        flagIcon = keywordsToNames[keyword].flag;
-        titleFlag = true;
+for (const [kw, info] of Object.entries(keywordsToNames)) {
+    if (new RegExp(kw, 'i').test(newTitle)) {
+        map[info.area] = (map[info.area] || 0) + 1;
+        map.total++;
+        newTitle = `${info.flag}${customCharStart}${map.total}-${info.area}-${map[info.area]}`;
+        matched = true;
         break;
     }
 }
 
-if (!titleFlag) {
-    newTitle = "🇺🇳自识别";
-    flagIcon = "🏳️‍🌈";
-}
-
-const map = globalThis.map || (globalThis.map = {});
-if(!map["totalNode"]){
-    map["totalNode"] = 0;
-}
-if (!map[newTitle]) {
-    map[newTitle] = 1;
-    newTitle = `${flagIcon}${customCharStart}${++map["totalNode"]}${newTitle}-1`;
-} else {
-    newTitle = `${flagIcon}${customCharStart}${++map["totalNode"]}${newTitle}-${++map[newTitle]}`;
+if (!matched) {
+    map.total++;
+    newTitle = `🏳️‍🌈${customCharStart}${map.total}-其它`;
 }
 
 $server.title = newTitle;
