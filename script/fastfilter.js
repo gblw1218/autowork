@@ -109,7 +109,8 @@ for (const keyword in keywordsToNames) {
 }
 
 if (!titleFlag) {
-    return false;
+    newTitle = "🌍未识别";
+    flagIcon = "💎";
 }
 
 
