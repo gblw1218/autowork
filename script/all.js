@@ -1,8 +1,8 @@
 let customCharStart = "序号";
-const filteredTypes = ["trojan"]; // 要过滤的协议类型
-if (filteredTypes.includes($server.type?.toLowerCase())) {
-    return false; 
-}
+// const filteredTypes = ["trojan"]; // 要过滤的协议类型
+// if (filteredTypes.includes($server.type?.toLowerCase())) {
+//     return false; 
+// }
 const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas|塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca|危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango|孟加拉国|达卡|BD|Bangladesh|Dhaka|俄罗斯|俄羅斯|Russia|RU";
 if (new RegExp(filterArea, 'i').test($server.title)) return false;
 
