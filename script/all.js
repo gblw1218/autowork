@@ -10,10 +10,10 @@ if (new RegExp(filterArea, 'i').test($server.title)) return false;
 const filterKeywords = [
     "广告", "过期", "无效", "测试", "备用", "账号", "有效期",
     "到期", "刷新", "剩余", "会员", "流量", "超时","建议",
-    "佣金", "免翻", "下载", "更新", "点外", "重置", "推荐",
-    "套餐", "关注", "有效", "版本", "已用", "过期", "失联",
+    "佣金", "下载", "更新", "点外", "重置", "推荐",
+    "套餐", "关注",  "版本", "已用", "过期", "失联",
     "TEST", "客服", "网站", "获取", "下次",  "联系", "邮箱",
-    "127.0.0.1", "Days", "Date", "Expire"];
+    "Days", "更新于", "Expire"];
 
 // 检查是否包含过滤关键词
 if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return false;

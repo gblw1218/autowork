@@ -1,6 +1,5 @@
 let customCharStart = "序号";
-const filterArea = "老挝|万象|LA|Laos|Vientiane|伊朗|委内瑞拉|加拉加斯|VE|Venezuela|Caracas|塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca|危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango|孟加拉国|达卡|BD|Bangladesh|Dhaka|俄罗斯|俄羅斯|Russia|RU";
-if (new RegExp(filterArea, 'i').test($server.title)) return false;
+
 //区域映射
 const keywordsToNames = {
     "港|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau|台|台湾|台北|高雄|TW|Taiwan|Taipei|Kaohsiung|亚洲}CN": { area: "🇭🇰港澳台", flag: "🚀" },
