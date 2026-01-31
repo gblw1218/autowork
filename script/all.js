@@ -12,10 +12,8 @@ const filterKeywords = [
     "到期", "刷新", "剩余", "会员", "流量", "超时","建议",
     "佣金", "免翻", "下载", "更新", "点外", "重置", "推荐",
     "套餐", "关注", "有效", "版本", "已用", "过期", "失联",
-    "TEST", "客服", "网站", "获取", "下次", "官址", "联系", "邮箱",
-    "127.0.0.1", "Days", "Date", "Expire", "Premium",
-    "USE", "USED", "TOTAL", "EXPIRE", "EMAIL"
-];
+    "TEST", "客服", "网站", "获取", "下次",  "联系", "邮箱",
+    "127.0.0.1", "Days", "Date", "Expire"];
 
 // 检查是否包含过滤关键词
 if (filterKeywords.some(kw => new RegExp(kw, 'i').test($server.title))) return false;
