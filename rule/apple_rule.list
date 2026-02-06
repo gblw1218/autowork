@@ -4,6 +4,8 @@ DOMAIN,appleid.cdn-apple.com
 DOMAIN,gsa.apple.com
 DOMAIN,idmsa.apple.com
 DOMAIN-KEYWORD,itunes.apple.com
+DOMAIN,time.apple.com
+DOMAIN,xp.apple.com
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-mapkit.com
 DOMAIN-SUFFIX,apple.com.akadns.net
