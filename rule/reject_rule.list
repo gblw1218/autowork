@@ -127,9 +127,7 @@ DOMAIN,adx.op.cp18.ott.cibntv.net
 DOMAIN,adx.sogaha.cn
 DOMAIN,adx.yiche.com
 DOMAIN,adxlog.vivo.com.cn
-DOMAIN,afd.baidu.com
 DOMAIN,al.autohome.com.cn
-DOMAIN,als.baidu.com
 DOMAIN,analytics.slashdotmedia.com
 DOMAIN,api-ad.kajicam.com
 DOMAIN,api.ad.xiaomi.com
@@ -268,7 +266,6 @@ DOMAIN,t-ads.xiaohongshu.com
 DOMAIN,t7z.cupid.iqiyi.com
 DOMAIN,t7z.cupid.ptqy.gitv.tv
 DOMAIN,tmead.y.qq.com
-DOMAIN,token.safebrowsing.apple
 DOMAIN,toots-a.akamaihd.net
 DOMAIN,track.58.com
 DOMAIN,track.tenjin.com
@@ -384,7 +381,6 @@ DOMAIN-KEYWORD,c-hzgt2.getui.com
 DOMAIN-KEYWORD,c.51y5.net
 DOMAIN-KEYWORD,c.wkanx.com
 DOMAIN-KEYWORD,c1.wkanx.com
-DOMAIN-KEYWORD,c1img.ali.kugou.com
 DOMAIN-KEYWORD,caclick.baidu.com
 DOMAIN-KEYWORD,cds.51y5.net
 DOMAIN-KEYWORD,click.rum.
@@ -36863,7 +36859,6 @@ DOMAIN-SUFFIX,image6.pubmatic.com
 DOMAIN-SUFFIX,imageadvantage.net
 DOMAIN-SUFFIX,imagecash.net
 DOMAIN-SUFFIX,imagenest.site
-DOMAIN-SUFFIX,imageplus.baidu.com
 DOMAIN-SUFFIX,images-pw.secureserver.net
 DOMAIN-SUFFIX,images8.gaotie.cn
 DOMAIN-SUFFIX,imageshh.com
@@ -65277,7 +65272,6 @@ DOMAIN-SUFFIX,servehemsusan.com
 DOMAIN-SUFFIX,servehub.info
 DOMAIN-SUFFIX,servenobid.com
 DOMAIN-SUFFIX,server4ads.com
-DOMAIN-SUFFIX,serveraddr.service.kugou.com
 DOMAIN-SUFFIX,serverbid.com
 DOMAIN-SUFFIX,servereplacementcycle.com
 DOMAIN-SUFFIX,serverhumidity.com
@@ -85112,5 +85106,4 @@ URL-REGEX,^https?:\/\/d\d.sinaimg.cn
 URL-REGEX,^https?:\/\/goblin\.hupu\.com/[^/]+/[^/]+\/interfaceAd\/
 URL-REGEX,^https?:\/\/sa\d\.tuisong\.baidu\.com
 URL-REGEX,^https?:\/\/sax\w?\.sina\.com\.cn
-URL-REGEX,^https?:\/\/update\.pan\.baidu\.com\/statistics
 USER-AGENT,AVOS*
