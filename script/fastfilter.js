@@ -102,7 +102,7 @@ for (const keyword in keywordsToNames) {
 }
 
 if (!titleFlag) {
-    newTitle = "🌍未识别";
+    newTitle = "🌍未知";
     flagIcon = "💎";
 }
 
