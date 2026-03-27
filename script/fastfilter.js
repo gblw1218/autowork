@@ -3,7 +3,7 @@ let customCharStart = "序号";
 //区域映射
 const keywordsToNames = {
     "港|港澳|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau|亚洲|CN": { area: "🇭🇰港澳", flag: "🚀" },
-    "台|台湾|台北|高雄|TW|Taiwan|Taipei|taipei|Kaohsiung|": { area: "🇹🇼台湾", flag: "🚀" },
+    "台|台湾|台北|高雄|湾湾|TW|Taiwan|Taipei|taipei|Kaohsiung": { area: "台湾", flag: "🚀" },
     "新加坡|狮城|SG|Singapore|SIN|LionCity": { area: "🇸🇬新加坡", flag: "🚀" },
     "日|日本|东京|大阪|名古屋|JP|NRT|KIX|Tokyo|Japan|Osaka|Nagoya": { area: "🇯🇵日本", flag: "🚀" },
     "韩国|首尔|釜山|KR|Korea|South Korea|Seoul|Busan|SEL|ICN": { area: "🇰🇷韩国", flag: "🚀" },
