@@ -31,15 +31,11 @@ const keywordsToNames = {
     "意大利|罗马|米兰|那不勒斯|IT|Italy|Rome|Milan|Naples": { area: "🇮🇹意大利", flag: "🔥" },
     "印度|孟买|德里|班加罗尔|IN|India|Mumbai|Delhi|Bangalore": { area: "🇮🇳印度", flag: "🔥" },
     "马来西亚|吉隆坡|槟城|MY|Malaysia|Kuala Lumpur|Penang": { area: "🇲🇾马来西亚", flag: "🔥" },
-    "比利时|Belgium|BE|Brussels|Antwerp|Ghent": { area: "🇧🇪比利时", flag: "🔥" },
     "奥地利|维也纳|AT|Austria|Vienna": { area: "🇦🇹奥地利", flag: "🔥" },
     "新西兰|奥克兰|NZ|New Zealand|Auckland": { area: "🇳🇿新西兰", flag: "🔥" },
     "瑞典|斯德哥尔摩|哥德堡|SE|Sweden|Stockholm|Gothenburg": { area: "🇸🇪瑞典", flag: "🔥" },
     "沙特|利雅得|吉达|SA|Saudi Arabia|Riyadh|Jeddah": { area: "🇸🇦沙特", flag: "🔥" },
     "印度尼西亚|雅加达|ID|Indonesia|Jakarta|印尼": { area: "🇮🇩印尼", flag: "🔥" },
-    "斯洛文尼亚|Slovenia|SI|Ljubljana": { area: "🇸🇮斯洛文尼亚", flag: "🔥" },
-    "拉脱维亚|Latvia|LV|Riga": { area: "🇱🇻拉脱维亚", flag: "🔥" },
-    "克罗地亚|Croatia|HR|Zagreb": { area: "🇭🇷克罗地亚", flag: "🔥" },
     "巴林|Bahrain|BH|Manama": { area: "🇧🇭巴林", flag: "🔥" },
     "科威特|Kuwait|KW|Kuwait City": { area: "🇰🇼科威特", flag: "🔥" },
     "尼日利亚|拉各斯|NG|Nigeria|Lagos": { area: "🇳🇬尼日利亚", flag: "🔥" },
@@ -55,38 +51,21 @@ const keywordsToNames = {
     "希腊|雅典|GR|Greece|Athens": { area: "🇬🇷希腊", flag: "💎" },
     "匈牙利|布达佩斯|HU|Hungary|Budapest": { area: "🇭🇺匈牙利", flag: "💎" },
     "捷克|布拉格|CZ|Czech|Prague": { area: "🇨🇿捷克", flag: "💎" },
-    "尼泊尔|加德满都|NP|Nepal|Kathmandu": { area: "🇳🇵尼泊尔", flag: "💎" },
     "葡萄牙|里斯本|PT|Portugal|Lisbon": { area: "🇵🇹葡萄牙", flag: "💎" },
-    "巴基斯坦|伊斯兰堡|PK|Pakistan|Islamabad": { area: "🇵🇰巴基斯坦", flag: "💎" },
     "伊拉克|巴格达|IQ|Iraq|Baghdad": { area: "🇮🇶伊拉克", flag: "💎" },
-    "阿尔及利亚|阿尔及尔|DZ|Algeria|Algiers": { area: "🇩🇿阿尔及利亚", flag: "💎" },
-    "摩洛哥|拉巴特|MA|Morocco|Rabat": { area: "🇲🇦摩洛哥", flag: "💎" },
     "秘鲁|利马|PE|Peru|Lima": { area: "🇵🇪秘鲁", flag: "💎" },
     "哥伦比亚|波哥大|CO|Colombia|Bogotá": { area: "🇨🇴哥伦比亚", flag: "💎" },
     "罗马尼亚|Romania|RO|Bucharest|Cluj-Napoca|Timișoara": { area: "🇷🇴罗马尼亚", flag: "💎" },
     "塞尔维亚|Serbia|RS|Belgrade|Novi Sad|Niš": { area: "🇷🇸塞尔维亚", flag: "💎" },
-    "立陶宛|Lithuania|LT|Vilnius|Kaunas|Klaipėda": { area: "🇱🇹立陶宛", flag: "💎" },
-    "危地马拉|Guatemala|GT|Guatemala City|Antigua Guatemala|Quetzaltenango": { area: "🇬🇹危地马拉", flag: "💎" },
     "乌克兰|Ukraine|UA|Kyiv|Lviv|Odesa": { area: "🇺🇦乌克兰", flag: "💎" },
     "厄瓜多尔|Ecuador|EC|Quito|Guayaquil|Cuenca": { area: "🇪🇨厄瓜多尔", flag: "💎" },
     "哥斯达黎加|Costa Rica|CR|San José|Alajuela|Cartago": { area: "🇨🇷哥斯达黎加", flag: "💎" },
-    "塞浦路斯|Cyprus|CY|Nicosia|Limassol|Larnaca": { area: "🇨🇾塞浦路斯", flag: "💎" },
-    "玻利维亚|Bolivia|BO|Sucre|La Paz|Santa Cruz": { area: "🇧🇴玻利维亚", flag: "💎" },
-    "乌拉圭|蒙得维的亚|UY|Uruguay|Montevideo": { area: "🇺🇾乌拉圭", flag: "💎" },
-    "委内瑞拉|加拉加斯|VE|Venezuela|Caracas": { area: "🇻🇪委内瑞拉", flag: "💎" },
-    "突尼斯|Tunisia|TN|Tunis": { area: "🇹🇳突尼斯", flag: "💎" },
     "加纳|阿克拉|GH|Ghana|Accra": { area: "🇬🇭加纳", flag: "💎" },
-    "肯尼亚|内罗毕|KE|Kenya|Nairobi": { area: "🇰🇪肯尼亚", flag: "💎" },
     "斯里兰卡|科伦坡|LK|Sri Lanka|Colombo": { area: "🇱🇰斯里兰卡", flag: "💎" },
     "柬埔寨|金边|KH|Cambodia|Phnom Penh": { area: "🇰🇭柬埔寨", flag: "💎" },
-    "缅甸|内比都|仰光|MM|Myanmar|Burma|Naypyidaw|Yangon": { area: "🇲🇲缅甸", flag: "💎" },
-    "哈萨克斯坦|阿斯塔纳|阿拉木图|KZ|Kazakhstan|Astana|Almaty": { area: "🇰🇿哈萨克斯坦", flag: "💎" },
-    "乌兹别克斯坦|塔什干|UZ|Uzbekistan|Tashkent": { area: "🇺🇿乌兹别克斯坦", flag: "💎" },
-    "格鲁吉亚|第比利斯|GE|Georgia|Tbilisi": { area: "🇬🇪格鲁吉亚", flag: "💎" },
     "保加利亚|索非亚|BG|Bulgaria|Sofia": { area: "🇧🇬保加利亚", flag: "💎" },
     "斯洛伐克|布拉提斯拉瓦|SK|Slovakia|Bratislava": { area: "🇸🇰斯洛伐克", flag: "💎" },
     "巴拿马|Panama|PA|Panama City": { area: "🇵🇦巴拿马", flag: "💎" },
-    "埃塞俄比亚|亚的斯亚贝巴|ET|Ethiopia|Addis Ababa": { area: "🇪🇹埃塞俄比亚", flag: "💎" }
 };
 
 
@@ -103,8 +82,7 @@ for (const keyword in keywordsToNames) {
 }
 
 if (!titleFlag) {
-    newTitle = "🌍未识别";
-    flagIcon = "💎";
+    return false;
 }
 
 
