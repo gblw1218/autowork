@@ -37,8 +37,6 @@ const keywordsToNames = {
     "沙特|利雅得|吉达|SA|Saudi Arabia|Riyadh|Jeddah": { area: "🇸🇦沙特", flag: "🔥" },
     "印度尼西亚|雅加达|ID|Indonesia|Jakarta|印尼": { area: "🇮🇩印尼", flag: "🔥" },
     "巴林|Bahrain|BH|Manama": { area: "🇧🇭巴林", flag: "🔥" },
-    "科威特|Kuwait|KW|Kuwait City": { area: "🇰🇼科威特", flag: "🔥" },
-    "尼日利亚|拉各斯|NG|Nigeria|Lagos": { area: "🇳🇬尼日利亚", flag: "🔥" },
     "菲律宾|马尼拉|PH|Philippines|Manila": { area: "🇵🇭菲律宾", flag: "🔥" },
     "南非|约翰内斯堡|开普敦|ZA|South Africa|Johannesburg|Cape Town": { area: "🇿🇦南非", flag: "🔥" },
     "波兰|华沙|克拉科夫|PL|Poland|Warsaw|Krakow": { area: "🇵🇱波兰", flag: "🔥" },
@@ -52,20 +50,7 @@ const keywordsToNames = {
     "匈牙利|布达佩斯|HU|Hungary|Budapest": { area: "🇭🇺匈牙利", flag: "💎" },
     "捷克|布拉格|CZ|Czech|Prague": { area: "🇨🇿捷克", flag: "💎" },
     "葡萄牙|里斯本|PT|Portugal|Lisbon": { area: "🇵🇹葡萄牙", flag: "💎" },
-    "伊拉克|巴格达|IQ|Iraq|Baghdad": { area: "🇮🇶伊拉克", flag: "💎" },
-    "秘鲁|利马|PE|Peru|Lima": { area: "🇵🇪秘鲁", flag: "💎" },
-    "哥伦比亚|波哥大|CO|Colombia|Bogotá": { area: "🇨🇴哥伦比亚", flag: "💎" },
-    "罗马尼亚|Romania|RO|Bucharest|Cluj-Napoca|Timișoara": { area: "🇷🇴罗马尼亚", flag: "💎" },
-    "塞尔维亚|Serbia|RS|Belgrade|Novi Sad|Niš": { area: "🇷🇸塞尔维亚", flag: "💎" },
-    "乌克兰|Ukraine|UA|Kyiv|Lviv|Odesa": { area: "🇺🇦乌克兰", flag: "💎" },
-    "厄瓜多尔|Ecuador|EC|Quito|Guayaquil|Cuenca": { area: "🇪🇨厄瓜多尔", flag: "💎" },
-    "哥斯达黎加|Costa Rica|CR|San José|Alajuela|Cartago": { area: "🇨🇷哥斯达黎加", flag: "💎" },
-    "加纳|阿克拉|GH|Ghana|Accra": { area: "🇬🇭加纳", flag: "💎" },
-    "斯里兰卡|科伦坡|LK|Sri Lanka|Colombo": { area: "🇱🇰斯里兰卡", flag: "💎" },
-    "柬埔寨|金边|KH|Cambodia|Phnom Penh": { area: "🇰🇭柬埔寨", flag: "💎" },
-    "保加利亚|索非亚|BG|Bulgaria|Sofia": { area: "🇧🇬保加利亚", flag: "💎" },
-    "斯洛伐克|布拉提斯拉瓦|SK|Slovakia|Bratislava": { area: "🇸🇰斯洛伐克", flag: "💎" },
-    "巴拿马|Panama|PA|Panama City": { area: "🇵🇦巴拿马", flag: "💎" },
+    "乌克兰|Ukraine|UA|Kyiv|Lviv|Odesa": { area: "🇺🇦乌克兰", flag: "💎" }
 };
 
 
