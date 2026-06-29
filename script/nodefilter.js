@@ -67,7 +67,8 @@ for (const keyword in keywordsToNames) {
 }
 
 if (!titleFlag) {
-    return false;
+    flagIcon = '💎';
+    newTitle = '未知'    
 }
 
 
