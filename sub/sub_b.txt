@@ -45,7 +45,6 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUUm9HUUtlcGcxQXNXTzJrVG5mUG5iQDUxLjEyNC4yMTc
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVazhsZm12aFlueDVySnZYeEtyUnFHUnluZDlnSXBKLmlZQDE5My4xNjguMTc1LjU2OjE0NjA1#%E6%84%8F%E5%A4%A7%E5%88%A9_055
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVazhsZm12aFlueDVySnZYeEtyUnFHUnluZDlnSXBKLmlZQDEwMy4yNDEuNjYuNzY6MTQ2MDU=#%E6%84%8F%E5%A4%A7%E5%88%A9_014
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWN2ptc0E2UFFzTG5AMTQ2LjE4NS4xOTguNDQ6NDQ0#%E5%A4%87%E9%80%89_278
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHZAMTA4LjE4MS4xMjEuMjI2OjgzODg=#%E5%8D%B0%E5%BA%A6_158
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc3k4T3g0eU9WM3hMbHB4dGp6czNYQDEwMi4xMzMuMTY1LjE2MDoxNjIzMw==#%E5%A4%87%E9%80%89_164
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYdkswbHRINjdYaHY5aHQ5UmhZc0Z5QDE4NS44OC4xNDEuMTE4OjgwODA=#%E8%8D%B7%E5%85%B0_152
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphMG5qUmRjR0x4eHZMRnpGQDIwLjEyMy4xNy4yMDI6NDQz#%E6%9C%AA%E7%9F%A5_1181
@@ -2016,7 +2015,7 @@ vless://f23b820b-b88f-4c40-8b20-b4b36629f6b1@sss15894.tas-bazi.com:443?security=
 vless://f278037e-ce36-4634-9b4d-fca93e345a35@104.16.191.195:80?path=%2Fvpnowl-vpnowl-vpnowl-vpnowl%3Fed%3D2560#%E5%A4%87%E9%80%89_448
 vless://f282b878-8711-45a1-8c69-5564172123c1@aio.loophole.biz.id:80?type=ws&security=tls#%E6%9C%AA%E7%9F%A5_714
 vless://f282b878-8711-45a1-8c69-5564172123c1@aio.zipzap.biz.id:80?type=ws&security=tls#%E6%9C%AA%E7%9F%A5_715
-vless://f2a73750-3087-48ff-a763-1348c15dce68@162.159.153.4:443?sni=rAyAn-007.mAxImA.DpDnS.OrG&type=ws&host=rAyAn-007.mAxImA.DpDnS.OrG&path=%2F&security=tls#%E5%8D%B0%E5%BA%A6_159
+vless://f2a73750-3087-48ff-a763-1348c15dce68@162.159.153.4:443?sni=rAyAn-007.mAxImA.DpDnS.OrG&type=ws&host=rAyAn-007.mAxImA.DpDnS.OrG&path=%2F&security=tls#%E5%8D%B0%E5%BA%A6_158
 vless://f2e486f9-1697-4be6-be59-6c4fb42c7a24@188.114.97.3:443?type=ws&security=tls#%E5%A4%87%E9%80%89_651
 vless://f353b55f-4624-4031-94ee-457eed8889de@euro.cloud-play.ir:80#%E5%A4%87%E9%80%89_545
 vless://f353b55f-4624-4031-94ee-457eed8889de@global.cloud-play.ir:80#%E5%A4%87%E9%80%89_351
