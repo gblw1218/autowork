@@ -1,3 +1,8 @@
+/*
+ * @Author: gblw gblw2025@gmail.com
+ * @Date: 2025-07-21 13:27:39
+ * @LastEditTime: 2026-06-30 11:52:08
+ */
 let customCharStart = "序号";
 
 //区域映射
@@ -68,7 +73,7 @@ for (const keyword in keywordsToNames) {
 
 if (!titleFlag) {
     flagIcon = '💎';
-    newTitle = '未知'    
+    newTitle = '火星'    
 }
 
 
