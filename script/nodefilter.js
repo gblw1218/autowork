@@ -4,7 +4,10 @@
  * @LastEditTime: 2026-06-30 11:52:08
  */
 let customCharStart = "序号";
-
+//如果的trojan协议，则丢弃该节点
+if($server.protocol == "trojan"){
+    return false;
+}
 //区域映射
 const keywordsToNames = {
     "港|港澳|香港|HK|Hong Kong|HKSAR|澳门|澳門|MO|Macao|Macau|亚洲|CN": { area: "🇭🇰港澳", flag: "🚀" },
