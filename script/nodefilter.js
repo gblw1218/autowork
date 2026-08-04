@@ -1,11 +1,11 @@
 /*
  * @Author: gblw gblw2025@gmail.com
  * @Date: 2025-07-21 13:27:39
- * @LastEditTime: 2026-06-30 11:52:08
+ * @LastEditTime: 2026-08-03 13:07:05
  */
 let customCharStart = "序号";
 //如果的trojan协议，则丢弃该节点
-if($server.protocol == "trojan"){
+if ($server.protocol == "trojan" || $server.protocol == "TROJAN"){
     return false;
 }
 //区域映射
