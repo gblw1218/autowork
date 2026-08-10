@@ -1,10 +1,8 @@
 
 let customCharStart = "序号";
 //如果是trojan协议，则丢弃该节点
-if ($server.protocol && $server.protocol.toLowerCase() === "trojan") {
+if ($server.type && $server.type.toLowerCase() === "trojan") {
     return false;
-}else{
-	console.log(JSON.stringify($server));
 }
 //区域映射
 const keywordsToNames = {
