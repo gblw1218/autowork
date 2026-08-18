@@ -1,6 +1,5 @@
 
 let customCharStart = "序号";
-//如果是trojan协议，则丢弃该节点
 if ($server.type && $server.type.toLowerCase() === "trojan") {
     return false;
 }
